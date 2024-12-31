@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Subscribe</title>
+  </head>
+  <body>
+    <section class="container max-w-screen-lg mx-auto my-12 flex flex-col p-6">
+      <a href="#" class="flex items-center font-bold py-6 text-cyan-400 hover:text-cyan-300 uppercase tracking-wide"
+        >View Page
+        <svg
+          class="w-6 h-6 ml-1"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 12H5m14 0-4 4m4-4-4-4"
+          />
+        </svg>
+      </a>
+
+      <!----------- Tabs --------------->
+      <div class="border-b w-full hidden md:flex md:justify-center mb-6">
+        <ul id="tabs" role="tablist" class="flex items-end text-sm">
+          <li>
+            <button id="posts" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Posts</button>
+          </li>
+          <li>
+            <button id="details" class="py-3 px-3 lg:px-6 border-b border-cyan-400 text-slate-500 font-bold uppercase">
+              Details
+            </button>
+          </li>
+          <li>
+            <button id="images" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Images</button>
+          </li>
+          <li>
+            <button id="followers" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Followers</button>
+          </li>
+          <li>
+            <button id="announcments" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Announcements</button>
+          </li>
+          <li>
+            <button id="orders" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Orders</button>
+          </li>
+          <li>
+            <button id="faq" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">FAQs</button>
+          </li>
+          <li>
+            <button id="admins" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Admins</button>
+          </li>
+          <li>
+            <button id="help" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Help</button>
+          </li>
+        </ul>
+      </div>
+
+      <!----------- Dropdown --------------->
+      <div class="relative md:hidden">
+        <svg
+          class="w-6 h-6 text-gray-800 absolute right-1 top-4"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m8 15 4 4 4-4m0-6-4-4-4 4"
+          />
+        </svg>
+
+        <select
+          class="bg-white block mb-3 border rounded-lg p-4 w-full outline-cyan-400 shadow appearance-none pr-6 text-slate-500 uppercase"
+        >
+          <option>Posts</option>
+          <option>Details</option>
+          <option>Images</option>
+          <option>Followers</option>
+          <option>Announcements</option>
+          <option>Orders</option>
+          <option>FAQs</option>
+          <option>Admins</option>
+          <option>Help</option>
+        </select>
+      </div>
+
+      <!--------------- Details ---------------------------------------->
+      <form class="flex flex-col md:grid md:grid-cols-2 gap-6">
+        <div>
+          <label for="name" class="font-bold text-slate-600 hover:cursor-pointer">Name</label>
+          <input id="name" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="tagline" class="font-bold text-slate-600 hover:cursor-pointer">Tagline</label>
+          <input id="tagline" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div class="col-span-2">
+          <label for="tagline" class="font-bold text-slate-600 hover:cursor-pointer">Description</label>
+          <textarea id="tagline" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow"></textarea>
+        </div>
+        <div>
+          <label for="website" class="font-bold text-slate-600 hover:cursor-pointer">Website</label>
+          <input id="website" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="youtube" class="font-bold text-slate-600 hover:cursor-pointer">YouTube</label>
+          <input id="youtube" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="facebook" class="font-bold text-slate-600 hover:cursor-pointer">Facebook</label>
+          <input id="facebook" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="youtube-id" class="font-bold text-slate-600 hover:cursor-pointer">YouTube Channel ID</label>
+          <input id="youtube-id" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          <p class="text-sm pt-3">Adds your YouTube channel's videos to your Community Page.</p>
+          <a
+            class="text-sm text-cyan-500 hover:text-cyan-400 underline"
+            href="https://support.google.com/youtube/answer/3250431?hl=en"
+            >How do I find my YouTube channel id?</a
+          >
+        </div>
+        <div>
+          <label for="tiktok" class="font-bold text-slate-600 hover:cursor-pointer">TikTok</label>
+          <input id="tiktok" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="twitter" class="font-bold text-slate-600 hover:cursor-pointer">Twitter</label>
+          <input id="twitter" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="instagram" class="font-bold text-slate-600 hover:cursor-pointer">Instagram</label>
+          <input id="instagram" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+        <div>
+          <label for="twitch" class="font-bold text-slate-600 hover:cursor-pointer">Twitch</label>
+          <input id="twitch" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+        </div>
+
+        <div class="col-span-2 flex justify-center">
+          <button class="text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-96">
+            Save
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.getElementById("tabs");
+        const links = tabs.querySelectorAll("li > button");
+
+        links.forEach((link) =>
+          link.addEventListener("click", () => {
+            const currentActiveLink = tabs.querySelector(".border-b");
+            const activeClasses = ["border-b", "border-cyan-400", "font-bold"];
+            activeClasses.forEach((activeClass) => {
+              currentActiveLink.classList.remove(activeClass);
+              link.classList.add(activeClass);
+            });
+          })
+        );
+      });
+    </script>
+  </body>
+</html>

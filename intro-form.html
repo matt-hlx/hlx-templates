@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Intro Form</title>
+  </head>
+  <body>
+    <section class="container max-w-screen-lg mx-auto my-12 flex flex-col p-6">
+      <h2 class="text-3xl md:text-5xl font-extrabold uppercase tracking-wide mb-12">HLX Intro Form</h2>
+      <form>
+        <p class="text-2xl text-slate-900 font-bold uppercase">Basic Information</p>
+        <div class="flex flex-col md:grid md:grid-cols-2 gap-6 mt-6">
+          <div>
+            <label for="full-name" class="font-bold text-slate-600 hover:cursor-pointer">Full Name</label>
+            <input id="full-name" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="preferrred-name" class="font-bold text-slate-600 hover:cursor-pointer">Preferred Name</label>
+            <input id="preferred-name" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="email" class="font-bold text-slate-600 hover:cursor-pointer">Email</label>
+            <input id="email" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="phone" class="font-bold text-slate-600 hover:cursor-pointer">Phone</label>
+            <input id="phone" type="tel" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="school" class="font-bold text-slate-600 hover:cursor-pointer">School</label>
+            <input id="school" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="sport" class="font-bold text-slate-600 hover:cursor-pointer">Sport</label>
+            <input id="sport" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="school-year" class="font-bold text-slate-600 hover:cursor-pointer">Year In School</label>
+            <input id="school-year" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Social Media</p>
+        <p class="text-slate-900">Fill out the ones you have, if any.</p>
+        <div class="flex flex-col md:grid md:grid-cols-2 gap-6 mt-6">
+          <div>
+            <label for="instagram" class="font-bold text-slate-600 hover:cursor-pointer">Instagram</label>
+            <input id="instagram" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="twitter" class="font-bold text-slate-600 hover:cursor-pointer">Twitter</label>
+            <input id="twitter" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="tiktok" class="font-bold text-slate-600 hover:cursor-pointer">TikTok</label>
+            <input id="tiktok" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="facebook" class="font-bold text-slate-600 hover:cursor-pointer">Facebook</label>
+            <input id="facebook" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="youtube" class="font-bold text-slate-600 hover:cursor-pointer">YouTube</label>
+            <input id="youtube" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+        </div>
+        <p class="text-2xl text-slate-900 font-bold uppercase mt-12">Streaming Platforms</p>
+        <p class="text-slate-900">Fill out the ones you have, if any.</p>
+        <div class="flex flex-col md:grid md:grid-cols-2 gap-6 mt-6">
+          <div>
+            <label for="twitch" class="font-bold text-slate-600 hover:cursor-pointer">Twitch</label>
+            <input id="twitch" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+          <div>
+            <label for="kick" class="font-bold text-slate-600 hover:cursor-pointer">Kick</label>
+            <input id="kick" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Brand Information</p>
+        <p class="text-slate-900">Tell us about your personal brand.</p>
+
+        <div class="flex flex-col gap-6 mt-6">
+          <div>
+            <label for="bio" class="font-bold text-slate-600 hover:cursor-pointer">Bio / Personal Statement</label>
+            <textarea id="bio" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow"></textarea>
+          </div>
+          <div>
+            <label for="website" class="font-bold text-slate-600 hover:cursor-pointer">Website</label>
+            <input id="website" type="text" class="block border rounded-lg p-4 w-full outline-cyan-400 shadow" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <div>
+            <label class="font-bold text-slate-600 hover:cursor-pointer">Headshot</label>
+            <div class="flex flex-col md:flex-row md:items-center">
+              <label
+                for="heashot-upload"
+                class="block text-center p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold hover:cursor-pointer"
+                >Choose a File</label
+              >
+              <p id="heashot-filename" class="mt-6 md:mt-0 md:pl-3 text-slatye-600 font-bold"></p>
+            </div>
+            <input id="heashot-upload" type="file" class="hidden" />
+            <img
+              class="md:w-60 md:h-60 mt-6 object-cover rounded-md"
+              src="https://hlx.gg/images/placeholders/community-logo-placeholder.png"
+              id="heashot-preview"
+            />
+          </div>
+          <div>
+            <label class="font-bold text-slate-600 hover:cursor-pointer">Logo</label>
+            <div class="flex flex-col md:flex-row md:items-center">
+              <label
+                for="logo-upload"
+                class="block text-center p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold hover:cursor-pointer"
+                >Choose a File</label
+              >
+              <p id="logo-filename" class="mt-6 md:mt-0 md:pl-3 text-slatye-600 font-bold"></p>
+            </div>
+            <input id="logo-upload" type="file" class="hidden" />
+            <img
+              class="md:w-60 md:h-60 mt-6 object-cover rounded-md"
+              src="https://hlx.gg/images/placeholders/community-logo-placeholder.png"
+              id="logo-preview"
+            />
+          </div>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Branding Colors</p>
+        <p class="text-slate-900">Fill out the ones you have, if any.</p>
+        <div class="flex flex-col md:grid md:grid-cols-2 gap-6 mt-6">
+          <div class="relative">
+            <input type="hidden" id="primary-color" value="" />
+            <span class="font-bold text-slate-600">School Primary Color</span>
+            <button
+              class="w-full border rounded-lg p-4 w-full outline-cyan-400 shadow font-bold text-slate-600 hover:cursor-pointer"
+              id="primary-color-dropdown-btn"
+            >
+              Choose Color
+            </button>
+            <ul
+              class="hidden bg-white border-r border-l border-b shadow max-h-80 overflow-y-scroll w-full absolute z-10"
+              id="primary-color-dropdown"
+            >
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-slate">
+                <span>Slate</span><span class="block w-12 h-6 bg-slate-500"></span>
+              </li>
+
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-gray">
+                <span>Gray</span><span class="block w-12 h-6 bg-gray-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-zinc">
+                <span>Zinc</span><span class="block w-12 h-6 bg-zinc-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-stone">
+                <span>Stone</span><span class="block w-12 h-6 bg-stone-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-red">
+                <span>Red</span><span class="block w-12 h-6 bg-red-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-orange">
+                <span>Orange</span><span class="block w-12 h-6 bg-orange-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-amber">
+                <span>Amber</span><span class="block w-12 h-6 bg-amber-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-yellow">
+                <span>Yellow</span><span class="block w-12 h-6 bg-yellow-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-lime">
+                <span>Lime</span><span class="block w-12 h-6 bg-lime-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-green">
+                <span>Green</span><span class="block w-12 h-6 bg-green-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="primary-color-emerald"
+              >
+                <span>Emerald</span><span class="block w-12 h-6 bg-emerald-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-teal">
+                <span>Teal</span><span class="block w-12 h-6 bg-teal-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-cyan">
+                <span>Cyan</span><span class="block w-12 h-6 bg-cyan-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-sky">
+                <span>Sky Blue</span><span class="block w-12 h-6 bg-sky-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-blue">
+                <span>Blue</span><span class="block w-12 h-6 bg-blue-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-indigo">
+                <span>Indigo</span><span class="block w-12 h-6 bg-indigo-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-violet">
+                <span>Violet</span><span class="block w-12 h-6 bg-violet-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-purple">
+                <span>Purple</span><span class="block w-12 h-6 bg-purple-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="primary-color-fuchsia"
+              >
+                <span>Fuchsia</span><span class="block w-12 h-6 bg-fuchsia-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-pink">
+                <span>Pink</span><span class="block w-12 h-6 bg-pink-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="primary-color-rose">
+                <span>Rose</span><span class="block w-12 h-6 bg-rose-500"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <input type="hidden" id="secondary-color" value="" />
+            <span class="font-bold text-slate-600">School Secondary Color</span>
+            <button
+              class="w-full border rounded-lg p-4 w-full outline-cyan-400 shadow font-bold text-slate-600 hover:cursor-pointer"
+              id="secondary-color-dropdown-btn"
+            >
+              Choose Color
+            </button>
+            <ul
+              class="hidden bg-white border-r border-l border-b shadow max-h-80 overflow-y-scroll w-full absolute z-10"
+              id="secondary-color-dropdown"
+            >
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-slate"
+              >
+                <span>Slate</span><span class="block w-12 h-6 bg-slate-500"></span>
+              </li>
+
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-gray">
+                <span>Gray</span><span class="block w-12 h-6 bg-gray-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-zinc">
+                <span>Zinc</span><span class="block w-12 h-6 bg-zinc-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-stone"
+              >
+                <span>Stone</span><span class="block w-12 h-6 bg-stone-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-red">
+                <span>Red</span><span class="block w-12 h-6 bg-red-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-orange"
+              >
+                <span>Orange</span><span class="block w-12 h-6 bg-orange-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-amber"
+              >
+                <span>Amber</span><span class="block w-12 h-6 bg-amber-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-yellow"
+              >
+                <span>Yellow</span><span class="block w-12 h-6 bg-yellow-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-lime">
+                <span>Lime</span><span class="block w-12 h-6 bg-lime-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-green"
+              >
+                <span>Green</span><span class="block w-12 h-6 bg-green-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-emerald"
+              >
+                <span>Emerald</span><span class="block w-12 h-6 bg-emerald-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-teal">
+                <span>Teal</span><span class="block w-12 h-6 bg-teal-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-cyan">
+                <span>Cyan</span><span class="block w-12 h-6 bg-cyan-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-sky">
+                <span>Sky Blue</span><span class="block w-12 h-6 bg-sky-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-blue">
+                <span>Blue</span><span class="block w-12 h-6 bg-blue-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-indigo"
+              >
+                <span>Indigo</span><span class="block w-12 h-6 bg-indigo-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-violet"
+              >
+                <span>Violet</span><span class="block w-12 h-6 bg-violet-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-purple"
+              >
+                <span>Purple</span><span class="block w-12 h-6 bg-purple-500"></span>
+              </li>
+              <li
+                class="flex items-center justify-between p-3 border-b hover:cursor-pointer"
+                id="secondary-color-fuchsia"
+              >
+                <span>Fuchsia</span><span class="block w-12 h-6 bg-fuchsia-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-pink">
+                <span>Pink</span><span class="block w-12 h-6 bg-pink-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="secondary-color-rose">
+                <span>Rose</span><span class="block w-12 h-6 bg-rose-500"></span>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <input type="hidden" id="text-color" value="" />
+            <span class="font-bold text-slate-600">Text Color</span>
+            <button
+              class="w-full border rounded-lg p-4 w-full outline-cyan-400 shadow font-bold text-slate-600 hover:cursor-pointer"
+              id="text-color-dropdown-btn"
+            >
+              Choose Color
+            </button>
+            <ul
+              class="hidden bg-white border-r border-l border-b shadow max-h-80 overflow-y-scroll w-full absolute z-10"
+              id="text-color-dropdown"
+            >
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-slate">
+                <span>Slate</span><span class="block w-12 h-6 bg-slate-500"></span>
+              </li>
+
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-gray">
+                <span>Gray</span><span class="block w-12 h-6 bg-gray-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-zinc">
+                <span>Zinc</span><span class="block w-12 h-6 bg-zinc-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-stone">
+                <span>Stone</span><span class="block w-12 h-6 bg-stone-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-red">
+                <span>Red</span><span class="block w-12 h-6 bg-red-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-orange">
+                <span>Orange</span><span class="block w-12 h-6 bg-orange-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-amber">
+                <span>Amber</span><span class="block w-12 h-6 bg-amber-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-yellow">
+                <span>Yellow</span><span class="block w-12 h-6 bg-yellow-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-lime">
+                <span>Lime</span><span class="block w-12 h-6 bg-lime-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-green">
+                <span>Green</span><span class="block w-12 h-6 bg-green-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-emerald">
+                <span>Emerald</span><span class="block w-12 h-6 bg-emerald-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-teal">
+                <span>Teal</span><span class="block w-12 h-6 bg-teal-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-cyan">
+                <span>Cyan</span><span class="block w-12 h-6 bg-cyan-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-sky">
+                <span>Sky Blue</span><span class="block w-12 h-6 bg-sky-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-blue">
+                <span>Blue</span><span class="block w-12 h-6 bg-blue-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-indigo">
+                <span>Indigo</span><span class="block w-12 h-6 bg-indigo-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-violet">
+                <span>Violet</span><span class="block w-12 h-6 bg-violet-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-purple">
+                <span>Purple</span><span class="block w-12 h-6 bg-purple-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-fuchsia">
+                <span>Fuchsia</span><span class="block w-12 h-6 bg-fuchsia-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-pink">
+                <span>Pink</span><span class="block w-12 h-6 bg-pink-500"></span>
+              </li>
+              <li class="flex items-center justify-between p-3 border-b hover:cursor-pointer" id="text-color-rose">
+                <span>Rose</span><span class="block w-12 h-6 bg-rose-500"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Services and Solutions</p>
+
+        <p class="text-slate-900 mt-6 mb-3">What services are you interested in offering?</p>
+        <div class="flex flex-col md:flex-row md:items-center flex-wrap gap-x-6 gap-y-3">
+          <div class="flex items-center">
+            <input id="tournament-hosting" type="checkbox" />
+            <label for="tournament-hosting" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Tournament Hosting</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="text-notifications" type="checkbox" />
+            <label for="text-notifications" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Text Notifications</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="webinar-hosting" type="checkbox" />
+            <label for="webinar-hosting" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Webinar Hosting</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="discord-hub" type="checkbox" />
+            <label for="discord-hub" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Discord Knowledge Hub</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="podcast-hosting" type="checkbox" />
+            <label for="podcast-hosting" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Podcast Hosting</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="merch-store" type="checkbox" />
+            <label for="merch-store" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Merchandise Store
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <label for="other-services" class="font-bold text-slate-600 hover:cursor-pointer"
+            >Describe any unique services or solutions you offer that are not listed above.</label
+          >
+          <textarea
+            id="other-services"
+            rows="4"
+            class="block border rounded-lg p-4 w-full outline-cyan-400 shadow"
+          ></textarea>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Brand Goals and Strategies</p>
+
+        <p class="text-slate-900 mt-6 mb-3">What are your primary goals for building your brand on our platform?</p>
+        <div class="flex flex-col md:flex-row md:items-center flex-wrap gap-x-6 gap-y-3">
+          <div class="flex items-center">
+            <input id="increase-visibility" type="checkbox" />
+            <label for="increase-visibility" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Increase Visibility</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="connect" type="checkbox" />
+            <label for="connect" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Connect With Fans</label>
+          </div>
+          <div class="flex items-center">
+            <input id="generate-income" type="checkbox" />
+            <label for="generate-income" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Generate Income</label
+            >
+          </div>
+          <div class="flex items-center">
+            <input id="network" type="checkbox" />
+            <label for="network" class="font-bold text-slate-600 hover:cursor-pointer ml-2"
+              >Network With Brands and Sponsors</label
+            >
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <label for="other-services" class="font-bold text-slate-600 hover:cursor-pointer"
+            >What is your Brand's Mission or Message Statement?</label
+          >
+          <textarea
+            id="other-services"
+            rows="4"
+            class="block border rounded-lg p-4 w-full outline-cyan-400 shadow"
+          ></textarea>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Content Preferences</p>
+
+        <p class="text-slate-900 mt-6 mb-3">What type of content do you prefer to create and share?</p>
+        <div class="flex flex-col md:flex-row md:items-center flex-wrap gap-x-6 gap-y-3">
+          <div class="flex items-center">
+            <input id="video-reels" type="checkbox" />
+            <label for="video-reels" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Video/Reels</label>
+          </div>
+          <div class="flex items-center">
+            <input id="photos" type="checkbox" />
+            <label for="photos" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Photos</label>
+          </div>
+          <div class="flex items-center">
+            <input id="blogs" type="checkbox" />
+            <label for="blogs" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Blogs/Articles</label>
+          </div>
+          <div class="flex items-center">
+            <input id="live-streams" type="checkbox" />
+            <label for="live-streams" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Live Streams</label>
+          </div>
+          <div class="flex items-center">
+            <input id="podcasts" type="checkbox" />
+            <label for="podcasts" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Podcasts</label>
+          </div>
+          <div class="flex items-center">
+            <input id="gaming" type="checkbox" />
+            <label for="gaming" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Gaming</label>
+          </div>
+        </div>
+
+        <p class="text-slate-900 mt-6 mb-3">How Frequently do you plan to post content?</p>
+        <div class="flex flex-col md:flex-row md:items-center flex-wrap gap-x-6 gap-y-3">
+          <div class="flex items-center">
+            <input id="daily" type="checkbox" />
+            <label for="daily" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Daily</label>
+          </div>
+          <div class="flex items-center">
+            <input id="weekly" type="checkbox" />
+            <label for="weekly" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Weekly</label>
+          </div>
+          <div class="flex items-center">
+            <input id="bi-weekly" type="checkbox" />
+            <label for="bi-weekly" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Bi Weekly</label>
+          </div>
+          <div class="flex items-center">
+            <input id="monthly" type="checkbox" />
+            <label for="monthly" class="font-bold text-slate-600 hover:cursor-pointer ml-2">Monthly</label>
+          </div>
+        </div>
+
+        <hr class="block my-12 shadow" />
+
+        <p class="text-2xl text-slate-900 font-bold uppercase">Sponsorship and Collaboration</p>
+
+        <div class="flex flex-col gap-12 mt-6">
+          <div>
+            <label for="partners" class="font-bold text-slate-600 hover:cursor-pointer">
+              List any sponsorts or partners you're currently working with.
+            </label>
+            <textarea
+              id="partners"
+              rows="4"
+              class="block border rounded-lg p-4 w-full outline-cyan-400 shadow"
+            ></textarea>
+          </div>
+          <div>
+            <label for="brands" class="font-bold text-slate-600 hover:cursor-pointer">
+              What types of brands or companies would you like to collaborate with?
+            </label>
+            <textarea
+              id="brands"
+              rows="4"
+              class="block border rounded-lg p-4 w-full outline-cyan-400 shadow"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="col-span-2 flex justify-center">
+          <button class="text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-96">
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Adds color palette squares for primary, secondary and text color dropdowns
+        // Passes chosen hexcode into hidden input field
+        const colorTypes = ["primary", "secondary", "text"];
+        colorTypes.forEach((colorType) => {
+          const colorField = document.getElementById(`${colorType}-color`);
+          const colorDropdownBtn = document.getElementById(`${colorType}-color-dropdown-btn`);
+          const colorDropdown = document.getElementById(`${colorType}-color-dropdown`);
+          const colorOptions = Object.keys(colors).map((color) =>
+            document.getElementById(`${colorType}-color-${color}`)
+          );
+
+          colorDropdownBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            colorDropdown.classList.toggle("hidden");
+          });
+
+          colorOptions.forEach((listItem, i) => {
+            const color = listItem.id.split("-").pop();
+            const hexcodes = (colors[color] && Object.values(colors[color])) || [];
+            listItem.innerHTML = `
+            <div class="flex items-center no-wrap justify-between w-full">${hexcodes
+              .map(
+                (hex) =>
+                  `<span id="${colorType}-color-${hex}" class="w-9 h-9 block bg-[${hex}] border hover:scale-110 transition ${colorType}-color-palette"></span>`
+              )
+              .join("")}</div>
+          `;
+          });
+
+          const colorPalettes = document.querySelectorAll(`.${colorType}-color-palette`);
+          colorPalettes.forEach((color, index) => {
+            color.addEventListener("click", () => {
+              const hex = color.id.split("-").pop();
+              colorField.value = hex;
+              colorDropdown.classList.add("hidden");
+              const bgColor = `bg-[${hex}]`;
+              colorDropdownBtn.innerHTML = `<div class="flex items-center justify-between">
+              <span class="block w-full h-8 ${bgColor}"></span>
+            </div>`;
+            });
+          });
+        });
+
+        // Sets Preview Images
+        const logoFileInput = document.getElementById("logo-upload");
+        logoFileInput.addEventListener("change", (event) => {
+          const [file] = event.target.files || [];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const imgPreview = document.getElementById("logo-preview");
+              const fileName = document.getElementById("logo-filename");
+              fileName.innerHTML = file.name;
+              imgPreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+
+        const headshotFileInput = document.getElementById("headshot-upload");
+        headshotFileInput?.addEventListener("change", (event) => {
+          const [file] = event.target.files || [];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const imgPreview = document.getElementById("headshot-preview");
+              const fileName = document.getElementById("headshot-filename");
+              fileName.innerHTML = file.name;
+              imgPreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      });
+
+      const colors = {
+        slate: {
+          50: "#f8fafc",
+          100: "#f1f5f9",
+          200: "#e2e8f0",
+          300: "#cbd5e1",
+          400: "#94a3b8",
+          500: "#64748b",
+          600: "#475569",
+          700: "#334155",
+          800: "#1e293b",
+          900: "#0f172a",
+          950: "#020617",
+        },
+
+        gray: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+          950: "#030712",
+        },
+
+        zinc: {
+          50: "#fafafa",
+          100: "#f4f4f5",
+          200: "#e4e4e7",
+          300: "#d4d4d8",
+          400: "#a1a1aa",
+          500: "#71717a",
+          600: "#52525b",
+          700: "#3f3f46",
+          800: "#27272a",
+          900: "#18181b",
+          950: "#09090b",
+        },
+
+        stone: {
+          50: "#fafaf9",
+          100: "#f5f5f4",
+          200: "#e7e5e4",
+          300: "#d6d3d1",
+          400: "#a8a29e",
+          500: "#78716c",
+          600: "#57534e",
+          700: "#44403c",
+          800: "#292524",
+          900: "#1c1917",
+          950: "#0c0a09",
+        },
+
+        red: {
+          50: "#fef2f2",
+          100: "#fee2e2",
+          200: "#fecaca",
+          300: "#fca5a5",
+          400: "#f87171",
+          500: "#ef4444",
+          600: "#dc2626",
+          700: "#b91c1c",
+          800: "#991b1b",
+          900: "#7f1d1d",
+          950: "#450a0a",
+        },
+
+        orange: {
+          50: "#fff7ed",
+          100: "#ffedd5",
+          200: "#fed7aa",
+          300: "#fdba74",
+          400: "#fb923c",
+          500: "#f97316",
+          600: "#ea580c",
+          700: "#c2410c",
+          800: "#9a3412",
+          900: "#7c2d12",
+          950: "#431407",
+        },
+
+        amber: {
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#f59e0b",
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
+          950: "#451a03",
+        },
+
+        yellow: {
+          50: "#fefce8",
+          100: "#fef9c3",
+          200: "#fef08a",
+          300: "#fde047",
+          400: "#facc15",
+          500: "#eab308",
+          600: "#ca8a04",
+          700: "#a16207",
+          800: "#854d0e",
+          900: "#713f12",
+          950: "#422006",
+        },
+
+        lime: {
+          50: "#f7fee7",
+          100: "#ecfccb",
+          200: "#d9f99d",
+          300: "#bef264",
+          400: "#a3e635",
+          500: "#84cc16",
+          600: "#65a30d",
+          700: "#4d7c0f",
+          800: "#3f6212",
+          900: "#365314",
+          950: "#1a2e05",
+        },
+
+        green: {
+          50: "#f0fdf4",
+          100: "#dcfce7",
+          200: "#bbf7d0",
+          300: "#86efac",
+          400: "#4ade80",
+          500: "#22c55e",
+          600: "#16a34a",
+          700: "#15803d",
+          800: "#166534",
+          900: "#14532d",
+          950: "#052e16",
+        },
+
+        emerald: {
+          50: "#ecfdf5",
+          100: "#d1fae5",
+          200: "#a7f3d0",
+          300: "#6ee7b7",
+          400: "#34d399",
+          500: "#10b981",
+          600: "#059669",
+          700: "#047857",
+          800: "#065f46",
+          900: "#064e3b",
+          950: "#022c22",
+        },
+
+        teal: {
+          50: "#f0fdfa",
+          100: "#ccfbf1",
+          200: "#99f6e4",
+          300: "#5eead4",
+          400: "#2dd4bf",
+          500: "#14b8a6",
+          600: "#0d9488",
+          700: "#0f766e",
+          800: "#115e59",
+          900: "#134e4a",
+          950: "#042f2e",
+        },
+
+        cyan: {
+          50: "#ecfeff",
+          100: "#cffafe",
+          200: "#a5f3fc",
+          300: "#67e8f9",
+          400: "#22d3ee",
+          500: "#06b6d4",
+          600: "#0891b2",
+          700: "#0e7490",
+          800: "#155e75",
+          900: "#164e63",
+          950: "#083344",
+        },
+
+        sky: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
+          900: "#0c4a6e",
+          950: "#082f49",
+        },
+
+        blue: {
+          50: "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#2563eb",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
+          950: "#172554",
+        },
+
+        indigo: {
+          50: "#eef2ff",
+          100: "#e0e7ff",
+          200: "#c7d2fe",
+          300: "#a5b4fc",
+          400: "#818cf8",
+          500: "#6366f1",
+          600: "#4f46e5",
+          700: "#4338ca",
+          800: "#3730a3",
+          900: "#312e81",
+          950: "#1e1b4b",
+        },
+
+        violet: {
+          50: "#f5f3ff",
+          100: "#ede9fe",
+          200: "#ddd6fe",
+          300: "#c4b5fd",
+          400: "#a78bfa",
+          500: "#8b5cf6",
+          600: "#7c3aed",
+          700: "#6d28d9",
+          800: "#5b21b6",
+          900: "#4c1d95",
+          950: "#2e1065",
+        },
+
+        purple: {
+          50: "#faf5ff",
+          100: "#f3e8ff",
+          200: "#e9d5ff",
+          300: "#d8b4fe",
+          400: "#c084fc",
+          500: "#a855f7",
+          600: "#9333ea",
+          700: "#7e22ce",
+          800: "#6b21a8",
+          900: "#581c87",
+          950: "#3b0764",
+        },
+
+        fuchsia: {
+          50: "#fdf4ff",
+          100: "#fae8ff",
+          200: "#f5d0fe",
+          300: "#f0abfc",
+          400: "#e879f9",
+          500: "#d946ef",
+          600: "#c026d3",
+          700: "#a21caf",
+          800: "#86198f",
+          900: "#701a75",
+          950: "#4a044e",
+        },
+
+        pink: {
+          50: "#fdf2f8",
+          100: "#fce7f3",
+          200: "#fbcfe8",
+          300: "#f9a8d4",
+          400: "#f472b6",
+          500: "#ec4899",
+          600: "#db2777",
+          700: "#be185d",
+          800: "#9d174d",
+          900: "#831843",
+          950: "#500724",
+        },
+
+        rose: {
+          50: "#fff1f2",
+          100: "#ffe4e6",
+          200: "#fecdd3",
+          300: "#fda4af",
+          400: "#fb7185",
+          500: "#f43f5e",
+          600: "#e11d48",
+          700: "#be123c",
+          800: "#9f1239",
+          900: "#881337",
+          950: "#4c0519",
+        },
+      };
+    </script>
+  </body>
+</html>

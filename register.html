@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Register</title>
+  </head>
+  <body>
+    <section class="container mx-auto mt-32 flex flex-col items-center">
+      <form class="flex flex-col items-center">
+        <input
+          type="text"
+          placeholder="Email"
+          class="block mb-3 border rounded-lg p-4 w-96 outline-cyan-400 invalid:border-red-500 shadow"
+        />
+        <input
+          type="text"
+          placeholder="Username"
+          class="block border rounded-lg p-4 w-96 outline-cyan-400 invalid:border-red-500 shadow"
+        />
+        <p class="text-sm text-slate-600 pt-2 pb-3 self-start">Your name as it will appear to others</p>
+        <input
+          type="password"
+          placeholder="Password"
+          class="block mb-3 border rounded-lg p-4 w-96 outline-cyan-400 invalid:border-red-500 shadow"
+        />
+
+        <div class="relative">
+          <svg
+            class="w-6 h-6 text-gray-800 absolute right-1 top-4"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m8 15 4 4 4-4m0-6-4-4-4 4"
+            />
+          </svg>
+
+          <select
+            class="bg-white block mb-3 border rounded-lg p-4 w-96 outline-cyan-400 invalid:border-red-500 shadow appearance-none pr-6"
+          >
+            <option>(UTC-06:00) Central Time (US & Canada)</option>
+            <option>(UTC-05:00) Eastern Time (US & Canada)</option>
+          </select>
+        </div>
+
+        <input
+          type="submit"
+          value="Log In"
+          class="block mb-3 text-center p-3 bg-cyan-400 text-white uppercase font-bold hover:bg-cyan-300 w-96 hover:cursor-pointer"
+        />
+        <p class="text-red-500 text-sm self-start">Email is required</p>
+      </form>
+
+      <p class="mt-6 font-bold">
+        Already have an account? <a href="#" class="text-cyan-400 hover:text-cyan-300">Login</a>
+      </p>
+      <p class="mt-6 italic max-w-96 font-bold">
+        By signing up for HLX you agree to abide by our
+        <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-300">Terms & Conditions</a>. To learn more
+        about how HLX protects your personal data see our
+        <a href="#" target="_blank" class="text-cyan-400 hover:text-cyan-300">privacy policy</a>.
+      </p>
+    </section>
+  </body>
+</html>

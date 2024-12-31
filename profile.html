@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Games</title>
+  </head>
+  <body>
+    <header class="container mx-auto flex flex-col lg:flex-row items-center gap-12 pt-12 px-3 lg:px-0">
+      <figure class="aspect-square rounded-full w-56 h-56 overflow-hidden">
+        <img
+          src="https://hyperluxeblobs.blob.core.windows.net/user-profile-pics/375aa88f-e7e5-4424-9a89-8c9f61951282.webp"
+          alt="BowserKingKoopa"
+        />
+        <figcaption class="hidden">BowserKingKoopa</figcaption>
+      </figure>
+      <div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold uppercase tracking-wide">
+          BowserKingKoopa
+        </h1>
+        <ul
+          class="flex flex-wrap items-center justify-center lg:justify-start gap-6 md:gap-12 xl:gap-24 w-full text-white font-extrabold uppercase tracking-wide pt-6"
+        >
+          <li>
+            <a href="facebook.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="instagram.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tiktok.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-400"
+                aria-hidden="true"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="snapchat.com" target="_blank">
+              <svg
+                class="w-8 h-8 text-black hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.211 1.507.099.134.179.7.306 1.131.057.193.204.424.582.424.493 0 1.312-.38 2.738-.144 1.398.233 2.712 2.215 5.235 2.215 2.345 0 3.744-1.991 5.09-2.215.779-.129 1.448-.088 2.196.058.515.101.977.157 1.124-.349.129-.437.208-.992.305-1.123.96-.149 3.156-.53 3.211-1.505.014-.254-.165-.477-.416-.519-3.154-.52-5.259-4.128-4.918-4.931.236-.557 1.252-.755 1.69-.928.814-.321 1.222-.716 1.213-1.173-.011-.585-.715-.934-1.233-.934-.527 0-1.284.624-1.897.286.096-1.698.332-4.095-.267-5.438-1.135-2.543-3.66-3.829-6.184-3.829-2.508 0-5.014 1.268-6.158 3.833z"
+                  fill="#020202"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="x.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="twitch.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M2.149 0l-1.612 4.119v16.836h5.731v3.045h3.224l3.045-3.045h4.657l6.269-6.269v-14.686h-21.314zm19.164 13.612l-3.582 3.582h-5.731l-3.045 3.045v-3.045h-4.836v-15.045h17.194v11.463zm-3.582-7.343v6.262h-2.149v-6.262h2.149zm-5.731 0v6.262h-2.149v-6.262h2.149z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!--------------- Gamertags ---------------------------------------->
+    <section class="container mx-auto my-20 lg:my-28 px-3 lg:px-0">
+      <h2 class="text-2xl sm:text-4xl font-extrabold mb-12 uppercase tracking-wide border-b">Gamertags</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hyperluxeblobs.blob.core.windows.net/game-thumbnails/9fe89cc3-3848-4c4c-a2a1-b30c726bc45e.webp"
+              />
+              <figcaption class="hidden">Valorant</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hyperluxeblobs.blob.core.windows.net/game-thumbnails/21035eab-fe81-498f-9499-e8a9bd7c8b20.webp"
+              />
+              <figcaption class="hidden">Mortal Kombat 11</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hyperluxeblobs.blob.core.windows.net/game-thumbnails/fcede8d1-848f-4551-973c-ac0d93ae952f.webp"
+              />
+              <figcaption class="hidden">Pop-a-Shot</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hyperluxeblobs.blob.core.windows.net/game-thumbnails/1b288f67-06d3-4988-9cc8-508ae96f0249.webp"
+              />
+              <figcaption class="hidden">Fortnite</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/rocket-league-thumb.webp"
+              />
+              <figcaption class="hidden">Rocket League</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/warzone-thumb.webp"
+              />
+              <figcaption class="hidden">Call of Duty Modern Warfare 3: Warzone 2</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/nba2k24.webp"
+              />
+              <figcaption class="hidden">NBA 2k24</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hyperluxeblobs.blob.core.windows.net/game-thumbnails/2ffd3c80-c2f7-4a78-885c-e7a75bfcfa6f.webp"
+              />
+              <figcaption class="hidden">Hearthstone</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/super-smash.webp"
+              />
+              <figcaption class="hidden">Super Smash Bros. Ultimate</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/apex.webp"
+              />
+              <figcaption class="hidden">Apex Legends</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/madden23-thumb.webp"
+              />
+              <figcaption class="hidden">Madden 23</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="block hover:text-cyan-400">
+            <figure class="block w-full h-56 relative overflow-hidden shadow rounded-lg">
+              <img
+                class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                src="https://hlx.gg/images/games/thumbnails/madden24-thumb.webp"
+              />
+              <figcaption class="hidden">Madden 24</figcaption>
+            </figure>
+            <span class="inline-block font-bold pt-3 max-w-28">BowserKingKoopa</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!--------------- Playing In ---------------------------------------->
+    <section class="container mx-auto my-20 lg:my-28 px-3 lg:px-0">
+      <h2 class="text-2xl sm:text-4xl font-extrabold mb-12 uppercase tracking-wide border-b">Registered Events</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/c3db85e4-eea3-4b8f-95a4-bc13a227de78.webp"
+            />
+            <figcaption class="hidden">On3 Elite Series Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">On3 Elite Series Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Single Elimination</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <span
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 text-sm uppercase font-bold"
+                >
+                  Upcoming
+                </span>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/tournament-thumbnails/hearthstone-thumb.webp"
+            />
+            <figcaption class="hidden">Hearthstone Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Hearthstone Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Single Elimination Bracket Generator</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <span
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 text-sm uppercase font-bold"
+                >
+                  Upcoming
+                </span>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/hearthstone-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/banners/warzone-banner.webp"
+            />
+            <figcaption class="hidden">Warzone 2 Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Warzone 2 Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Battle Royale</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <span
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 text-sm uppercase font-bold"
+                >
+                  Upcoming
+                </span>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd5ec5f8-8c6f-40e5-98dc-3c59d0ba6349/dflfvz2-7cab6f0f-d695-4a9d-bb64-7fabb9a4c3bc.png"
+                />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!--------------- Past Events ---------------------------------------->
+    <section class="container mx-auto my-20 lg:my-28 px-3 lg:px-0">
+      <h2 class="text-2xl sm:text-4xl font-extrabold mb-12 uppercase tracking-wide border-b">Past Events</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/c3db85e4-eea3-4b8f-95a4-bc13a227de78.webp"
+            />
+            <figcaption class="hidden">On3 Elite Series Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">On3 Elite Series Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Single Elimination</p>
+                  <time class="block text-slate-500">9/15/24 04:00 PM ET</time>
+                </div>
+                <span
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-green-400 text-sm uppercase font-bold"
+                >
+                  Complete
+                </span>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/tournament-thumbnails/hearthstone-thumb.webp"
+            />
+            <figcaption class="hidden">Hearthstone Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Hearthstone Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Single Elimination Bracket Generator</p>
+                  <time class="block text-slate-500">9/15/24 04:00 PM ET</time>
+                </div>
+                <span
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-green-400 text-sm uppercase font-bold"
+                >
+                  Complete
+                </span>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/hearthstone-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/banners/warzone-banner.webp"
+            />
+            <figcaption class="hidden">Warzone 2 Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Warzone 2 Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Battle Royale</p>
+                  <time class="block text-slate-500">9/15/24 04:00 PM ET</time>
+                </div>
+                <span
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-green-400 text-sm uppercase font-bold"
+                >
+                  Complete
+                </span>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd5ec5f8-8c6f-40e5-98dc-3c59d0ba6349/dflfvz2-7cab6f0f-d695-4a9d-bb64-7fabb9a4c3bc.png"
+                />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

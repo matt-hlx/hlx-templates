@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | My Tournaments</title>
+  </head>
+  <body>
+    <section class="container mx-auto mt-12 px-6 lg:px-0">
+      <div class="flex flex-col xl:flex-row xl:items-end xl:justify-between mb-12">
+        <h2 class="text-4xl font-extrabold uppercase tracking-wide mb-6 xl:mb-0">Tournaments</h2>
+        <div class="flex flex-col lg:flex-row lg:items-end gap-6">
+          <div>
+            <label class="font-bold text-slate-600 hover:cursor-pointer">Filter by status:</label>
+            <div class="relative lg:max-w-96">
+              <svg
+                class="w-6 h-6 text-gray-800 absolute right-1 top-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m8 15 4 4 4-4m0-6-4-4-4 4"
+                />
+              </svg>
+              <select
+                id="tournament-status-tabs"
+                class="bg-white block rounded-lg p-4 w-full outline-cyan-400 border shadow appearance-none pr-6 text-slate-500 uppercase"
+              >
+                <option>Active</option>
+                <option>Completed</option>
+                <option>Cancelled</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-slate-600 hover:cursor-pointer">Filter by game:</label>
+            <div class="relative lg:max-w-96">
+              <svg
+                class="w-6 h-6 text-gray-800 absolute right-1 top-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m8 15 4 4 4-4m0-6-4-4-4 4"
+                />
+              </svg>
+              <select
+                id="game-tabs"
+                class="bg-white block rounded-lg p-4 w-full outline-cyan-400 border shadow appearance-none pr-6 text-slate-500 uppercase"
+              >
+                <option>All Games</option>
+                <option>Valorant</option>
+                <option>Mortal Kombat 11</option>
+                <option>Pop-a-Shot</option>
+                <option>Fortnite</option>
+                <option>Rocket League</option>
+                <option>Call of Duty Modern Warfare 3: Warzone 2</option>
+                <option>NBA 2k24</option>
+                <option>Hearthstone</option>
+                <option>Super Smash Brothers. Ultimate</option>
+                <option>Apex Legends</option>
+                <option>Madden 23</option>
+                <option>Madden 24</option>
+              </select>
+            </div>
+          </div>
+          <button class="text-xl p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-56">
+            Apply
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="w-full bg-gradient-to-r from-slate-950 to-slate-700 px-6 py-12">
+      <div class="container mx-auto">
+        <div class="flex flex-col gap-6 w-full">
+          <div>
+            <h3 class="text-2xl font-extrabold uppercase mb-3 tracking-wide text-white">My Tournaments</h3>
+            <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              <li class="bg-white rounded-lg overflow-hidden">
+                <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+                  <img
+                    class="absolute w-full h-full object-cover"
+                    src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/c3db85e4-eea3-4b8f-95a4-bc13a227de78.webp"
+                  />
+                  <figcaption class="hidden">On3 Elite Series Tournament</figcaption>
+                </figure>
+                <div class="p-6">
+                  <div class="md:min-h-36">
+                    <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400"
+                      >On3 Elite Series Tournament</a
+                    >
+                    <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                      <div class="xl:col-span-2">
+                        <p class="text-xl">Single Elimination</p>
+                        <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                      </div>
+                      <span
+                        class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-green-400 text-sm uppercase font-bold"
+                      >
+                        Complete
+                      </span>
+                    </div>
+                  </div>
+
+                  <hr class="block transparent border-b border-slate-100 mt-6" />
+
+                  <div class="flex justify-between items-center mt-6">
+                    <a href="#" class="hover:scale-105 transition">
+                      <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" />
+                    </a>
+                    <a href="#" class="hover:scale-105 transition">
+                      <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-white rounded-lg overflow-hidden">
+                <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+                  <img
+                    class="absolute w-full h-full object-cover"
+                    src="https://hlx.gg/images/games/tournament-thumbnails/hearthstone-thumb.webp"
+                  />
+                  <figcaption class="hidden">Hearthstone Tournament</figcaption>
+                </figure>
+                <div class="p-6">
+                  <div class="md:min-h-36">
+                    <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400"
+                      >Hearthstone Tournament</a
+                    >
+                    <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                      <div class="xl:col-span-2">
+                        <p class="text-xl">Single Elimination Bracket Generator</p>
+                        <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                      </div>
+                      <span
+                        class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 text-sm uppercase font-bold"
+                      >
+                        Upcoming
+                      </span>
+                    </div>
+                  </div>
+
+                  <hr class="block transparent border-b border-slate-100 mt-6" />
+
+                  <div class="flex justify-between items-center mt-6">
+                    <a href="#" class="hover:scale-105 transition">
+                      <img
+                        class="w-20 h-20 rounded-2xl"
+                        src="https://hlx.gg/images/games/logos/hearthstone-logo.webp"
+                      />
+                    </a>
+                    <a href="#" class="hover:scale-105 transition">
+                      <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-white rounded-lg overflow-hidden">
+                <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+                  <img
+                    class="absolute w-full h-full object-cover"
+                    src="https://hlx.gg/images/games/banners/warzone-banner.webp"
+                  />
+                  <figcaption class="hidden">Warzone 2 Tournament</figcaption>
+                </figure>
+                <div class="p-6">
+                  <div class="md:min-h-36">
+                    <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Warzone 2 Tournament</a>
+                    <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                      <div class="xl:col-span-2">
+                        <p class="text-xl">Battle Royale</p>
+                        <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                      </div>
+                      <p
+                        class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-purple-500 text-sm uppercase font-bold"
+                      >
+                        Active
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr class="block transparent border-b border-slate-100 mt-6" />
+
+                  <div class="flex justify-between items-center mt-6">
+                    <a href="#" class="hover:scale-105 transition">
+                      <img
+                        class="w-20 h-20 rounded-2xl"
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd5ec5f8-8c6f-40e5-98dc-3c59d0ba6349/dflfvz2-7cab6f0f-d695-4a9d-bb64-7fabb9a4c3bc.png"
+                      />
+                    </a>
+                    <a href="#" class="hover:scale-105 transition">
+                      <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold uppercase mt-12 mb-3 tracking-wide text-white">
+              Registered Tournaments
+            </h3>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+              <li class="bg-white rounded-lg overflow-hidden">
+                <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+                  <img
+                    class="absolute w-full h-full object-cover object-left"
+                    src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/8eeeec2b-a9e4-4e88-ba8a-078ca2814d5c.webp"
+                  />
+                  <figcaption class="hidden">Patrick Willis' Madden Showdown</figcaption>
+                </figure>
+                <div class="p-6">
+                  <div class="md:min-h-36">
+                    <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400"
+                      >Patrick Willis' Madden Showdown</a
+                    >
+                    <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                      <div class="xl:col-span-2">
+                        <p class="text-xl">Double Elimination</p>
+                        <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                      </div>
+                      <p
+                        class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-purple-500 text-sm uppercase font-bold"
+                      >
+                        Active
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr class="block transparent border-b border-slate-100 mt-6" />
+
+                  <div class="flex justify-between items-center mt-6">
+                    <a href="#" class="hover:scale-105 transition">
+                      <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" />
+                    </a>
+                    <a href="#" class="hover:scale-105 transition">
+                      <img
+                        class="w-20 h-20 rounded-2xl"
+                        src="https://hlx.gg/images/communities/vibe-nation/vibe-nation-logo.webp"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-white rounded-lg overflow-hidden">
+                <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+                  <img
+                    class="absolute w-full h-full object-cover"
+                    src="https://hlx.gg/images/games/banners/warzone-banner.webp"
+                  />
+                  <figcaption class="hidden">Warzone 2 Tournament</figcaption>
+                </figure>
+                <div class="p-6">
+                  <div class="md:min-h-36">
+                    <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Warzone 2 Tournament</a>
+                    <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                      <div class="xl:col-span-2">
+                        <p class="text-xl">Battle Royale</p>
+                        <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                      </div>
+                      <p
+                        class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-red-400 text-sm uppercase font-bold"
+                      >
+                        Cancelled
+                      </p>
+                    </div>
+                  </div>
+
+                  <hr class="block transparent border-b border-slate-100 mt-6" />
+
+                  <div class="flex justify-between items-center mt-6">
+                    <a href="#" class="hover:scale-105 transition">
+                      <img
+                        class="w-20 h-20 rounded-2xl"
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd5ec5f8-8c6f-40e5-98dc-3c59d0ba6349/dflfvz2-7cab6f0f-d695-4a9d-bb64-7fabb9a4c3bc.png"
+                      />
+                    </a>
+                    <a href="#" class="hover:scale-105 transition">
+                      <img
+                        class="w-20 h-20 rounded-2xl"
+                        src="https://hlx.gg/images/communities/vibe-nation/vibe-nation-logo.webp"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container mx-auto mb-12 px-6 lg:px-0">
+      <h3 class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">Upcoming Tournaments</h3>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover object-left"
+              src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/8eeeec2b-a9e4-4e88-ba8a-078ca2814d5c.webp"
+            />
+            <figcaption class="hidden">Patrick Willis' Madden Showdown</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400"
+                >Patrick Willis' Madden Showdown</a
+              >
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Double Elimination</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <a
+                  href="#"
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 hover:bg-cyan-300 text-sm uppercase font-bold"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://hlx.gg/images/communities/vibe-nation/vibe-nation-logo.webp"
+                />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/banners/warzone-banner.webp"
+            />
+            <figcaption class="hidden">Warzone 2 Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Warzone 2 Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Battle Royale</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <a
+                  href="#"
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 hover:bg-cyan-300 text-sm uppercase font-bold"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd5ec5f8-8c6f-40e5-98dc-3c59d0ba6349/dflfvz2-7cab6f0f-d695-4a9d-bb64-7fabb9a4c3bc.png"
+                />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://hlx.gg/images/communities/vibe-nation/vibe-nation-logo.webp"
+                />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/tournament-thumbnails/hearthstone-thumb.webp"
+            />
+            <figcaption class="hidden">Hearthstone Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Hearthstone Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Battle Royale</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <a
+                  href="#"
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 hover:bg-cyan-300 text-sm uppercase font-bold"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/hearthstone-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">All Tournaments</h3>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover object-left"
+              src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/8eeeec2b-a9e4-4e88-ba8a-078ca2814d5c.webp"
+            />
+            <figcaption class="hidden">Patrick Willis' Madden Showdown</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400"
+                >Patrick Willis' Madden Showdown</a
+              >
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Double Elimination</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <a
+                  href="#"
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 hover:bg-cyan-300 text-sm uppercase font-bold"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://hlx.gg/images/communities/vibe-nation/vibe-nation-logo.webp"
+                />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/banners/warzone-banner.webp"
+            />
+            <figcaption class="hidden">Warzone 2 Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Warzone 2 Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Battle Royale</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <a
+                  href="#"
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 hover:bg-cyan-300 text-sm uppercase font-bold"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/fd5ec5f8-8c6f-40e5-98dc-3c59d0ba6349/dflfvz2-7cab6f0f-d695-4a9d-bb64-7fabb9a4c3bc.png"
+                />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img
+                  class="w-20 h-20 rounded-2xl"
+                  src="https://hlx.gg/images/communities/vibe-nation/vibe-nation-logo.webp"
+                />
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="bg-white rounded-lg overflow-hidden border shadow">
+          <figure class="block w-full h-60 sm:h-56 lg:h-60 xl:h-72 relative">
+            <img
+              class="absolute w-full h-full object-cover"
+              src="https://hlx.gg/images/games/tournament-thumbnails/hearthstone-thumb.webp"
+            />
+            <figcaption class="hidden">Hearthstone Tournament</figcaption>
+          </figure>
+          <div class="p-6">
+            <div class="md:min-h-36">
+              <a href="#" target="_blank" class="text-2xl font-bold hover:text-cyan-400">Hearthstone Tournament</a>
+              <div class="grid grid-cols-1 xl:grid-cols-3 mt-3">
+                <div class="xl:col-span-2">
+                  <p class="text-xl">Battle Royale</p>
+                  <time class="block text-slate-500">11/15/24 04:00 PM ET</time>
+                </div>
+                <a
+                  href="#"
+                  class="self-start p-3 mt-6 xl:mt-0 inline-flex justify-center items-center text-white bg-cyan-400 hover:bg-cyan-300 text-sm uppercase font-bold"
+                >
+                  Register
+                </a>
+              </div>
+            </div>
+
+            <hr class="block transparent border-b border-slate-100 mt-6" />
+
+            <div class="flex justify-between items-center mt-6">
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/images/games/logos/hearthstone-logo.webp" />
+              </a>
+              <a href="#" class="hover:scale-105 transition">
+                <img class="w-20 h-20 rounded-2xl" src="https://hlx.gg/assets/p11nk/logo-MwJpVJho.png" />
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!------------------- Pagination ------------------->
+    <div class="container mx-auto px-6 mb-6">
+      <nav class="w-full flex justify-center">
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="#"
+              ><svg
+                class="w-6 h-6 hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 12h14M5 12l4-4m-4 4 4 4"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="#" class="py-2 px-3 bg-cyan-400 text-white font-bold rounded-lg hover:cursor-default">1</a></li>
+          <li><a href="#" class="hover:text-cyan-400">2</a></li>
+          <li><a href="#" class="hover:text-cyan-400">3</a></li>
+          <li><a href="#" class="hover:text-cyan-400">4</a></li>
+          <li><a href="#" class="hover:text-cyan-400">5</a></li>
+          <li>
+            <a href="#">
+              <svg
+                class="w-6 h-6 hover:text-cyan-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Tournament</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid grid-cols-1 lg:grid-cols-12 h-full">
+      <!--------------------- Mobile Dropdown Navigation ----------------->
+      <nav class="lg:hidden py-6 px-6 md:px-12 w-full bg-gradient-to-r from-cyan-700 to-cyan-600">
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-bold uppercase tracking-wide p-0 m-0 text-white">Elite Series Mortal Kombat 11</h3>
+          <button id="toggle-mobile-nav-btn">
+            <svg id="toggle-icon" class="w-12 h-12 text-white" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+            </svg>
+            <svg
+              id="close-icon"
+              class="w-12 h-12 text-gray-800 dark:text-white hidden"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18 17.94 6M18 18 6.06 6"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul id="mobile-nav" class="hidden flex-col gap-y-1 text-white font-bold mt-12 tracking-wide">
+          <li>
+            <a
+              href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament.html"
+              class="flex items-center bg-cyan-800 p-3 rounded-lg shadow-inner"
+            >
+              <svg
+                class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                />
+              </svg>
+
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/rules.html"
+              class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner"
+            >
+              <svg
+                class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-3 5h3m-6 0h.01M12 16h3m-6 0h.01M10 3v4h4V3h-4Z"
+                />
+              </svg>
+
+              <span>Rules</span>
+            </a>
+          </li>
+          <li class="flex items-center justify-between relative">
+            <a
+              href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/players.html"
+              class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner"
+            >
+              <svg
+                class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <span>Teams</span>
+            </a>
+            <p class="p-2 text-sm bg-cyan-700 rounded-xl min-w-9 absolute right-3">32</p>
+          </li>
+          <li>
+            <a
+              href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/scoreboard.html"
+              class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner w-full"
+            >
+              <svg
+                class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm4.996 2a1 1 0 0 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM11 8a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Zm-4.004 3a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM11 11a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Zm-4.004 3a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM11 14a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <span>Scoreboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/settings.html"
+              class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner w-full"
+            >
+              <svg
+                class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                />
+              </svg>
+
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--------------------- Sidebar Navigation ----------------->
+      <aside class="hidden lg:block w-full h-full bg-gradient-to-r from-cyan-700 to-cyan-600 lg:col-span-3 px-6 py-14">
+        <nav>
+          <ul class="flex flex-col gap-y-1 text-white font-bold tracking-wide">
+            <li>
+              <a
+                href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament.html"
+                class="flex items-center bg-cyan-800 p-3 rounded-lg shadow-inner"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                <span>Overview</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/rules.html"
+                class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 4h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3m0 3h6m-3 5h3m-6 0h.01M12 16h3m-6 0h.01M10 3v4h4V3h-4Z"
+                  />
+                </svg>
+
+                <span>Rules</span>
+              </a>
+            </li>
+            <li class="flex items-center justify-between relative">
+              <a
+                href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/players.html"
+                class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner w-full"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                <span>Teams</span>
+              </a>
+              <p class="p-2 text-sm bg-cyan-700 rounded-xl min-w-9 absolute right-3">32</p>
+            </li>
+            <li>
+              <a href="#" class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner w-full">
+                <svg
+                  class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm4.996 2a1 1 0 0 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM11 8a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Zm-4.004 3a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM11 11a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Zm-4.004 3a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01ZM11 14a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                <span>Scoreboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://hlx-staging.s3.us-east-2.amazonaws.com/tournament/settings.html"
+                class="flex items-center p-3 hover:bg-cyan-800 hover:rounded-lg hover:shadow-inner w-full"
+              >
+                <svg
+                  class="w-7 h-7 text-gray-800 dark:text-white mr-4"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  />
+                </svg>
+
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!------------------- Content -------------------------->
+      <section class="w-full lg:col-span-9 p-6 md:p-12">
+        <!--------------- Details ---------------------------------------->
+        <h2 class="w-full lg:max-w-screen-lg text-4xl font-extrabold uppercase tracking-wide mb-3">
+          Elite Series Mortal Kombat 11
+        </h2>
+        <p class="text-2xl font-bold mb-3 md:mb-0">
+          Hosted by: <a href="#" target="_blank" class="hover:text-cyan-400">HLX</a>
+        </p>
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full lg:max-w-screen-lg mb-6">
+          <p class="flex items-center text-xl text-black font-bold tracking-wide mb-3 md:mb-0">
+            <svg class="w-8 h-8 mr-2" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+              />
+            </svg>
+            <time>10/21/2024 4:00 PM ET</time>
+          </p>
+          <button class="w-full text-xl p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold md:max-w-72">
+            Register
+          </button>
+        </div>
+        <img
+          src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/4d204f53-9d50-40be-9f3c-102fc6dea38a.webp"
+          class="w-full lg:max-w-screen-lg mb-3 lg:mb-0 rounded block"
+          width="1280"
+          height="768"
+        />
+        <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 items-start py-6 w-full lg:max-w-screen-lg">
+          <li class="flex flex-col items-center md:items-start text-xl text-black font-bold tracking-wide">
+            <a href="#" target="_blank" class="block hover:text-cyan-400">
+              <figure class="block h-36 w-36 relative overflow-hidden shadow rounded-lg">
+                <img
+                  class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                  src="https://hyperluxeblobs.blob.core.windows.net/game-thumbnails/21035eab-fe81-498f-9499-e8a9bd7c8b20.webp"
+                />
+                <figcaption class="hidden">Mortal Kombat 11</figcaption>
+              </figure>
+              <span class="inline-block font-bold pt-3 text-xl max-w-40 sm:max-w-56 text-center">Mortal Kombat 11</span>
+            </a>
+          </li>
+          <li class="flex flex-col items-center text-xl text-black font-bold tracking-wide">
+            <a href="#" target="_blank" class="block hover:text-cyan-400 text-center">
+              <figure class="block h-36 w-36 relative overflow-hidden shadow rounded-lg">
+                <img
+                  class="w-full h-full absolute object-cover object-top hover:scale-105 transition"
+                  src="https://hlx.gg/images/communities/hlx/hlx-logo.webp"
+                />
+                <figcaption class="hidden">HLX</figcaption>
+              </figure>
+              <span class="inline-block font-bold pt-3 text-xl max-w-40 sm:max-w-56">HLX</span>
+            </a>
+          </li>
+          <li class="flex flex-col items-center text-xl text-black text-center font-bold tracking-wide">
+            <svg
+              class="w-36 h-36"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="BRACKET"
+              width="2053"
+              height="2160"
+              viewBox="0 0 2053 2160"
+            >
+              <g id="Bracket_Left" data-name="Bracket Left">
+                <rect class="cls-1" x="230" y="140" width="381" height="45" rx="22.5" ry="22.5" />
+                <rect
+                  id="Rectangle_5_copy"
+                  data-name="Rectangle 5 copy"
+                  class="cls-1"
+                  x="230"
+                  y="395"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_2"
+                  data-name="Rectangle 5 copy 2"
+                  class="cls-1"
+                  x="230"
+                  y="650"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_3"
+                  data-name="Rectangle 5 copy 3"
+                  class="cls-1"
+                  x="230"
+                  y="905"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_4"
+                  data-name="Rectangle 5 copy 4"
+                  class="cls-1"
+                  x="589"
+                  y="784"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_5"
+                  data-name="Rectangle 5 copy 5"
+                  class="cls-1"
+                  x="589"
+                  y="263"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_6"
+                  data-name="Rectangle 5 copy 6"
+                  class="cls-1"
+                  x="566"
+                  y="140"
+                  width="45"
+                  height="300"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_7"
+                  data-name="Rectangle 5 copy 7"
+                  class="cls-1"
+                  x="566"
+                  y="650"
+                  width="45"
+                  height="300"
+                  rx="22.5"
+                  ry="22.5"
+                />
+              </g>
+              <rect
+                id="Rectangle_5_copy_8"
+                data-name="Rectangle 5 copy 8"
+                class="cls-1"
+                x="566"
+                y="1688"
+                width="45"
+                height="300"
+                rx="22.5"
+                ry="22.5"
+              />
+              <g id="Bracket_Left_copy" data-name="Bracket Left copy">
+                <rect class="cls-1" x="230" y="1178" width="381" height="45" rx="22.5" ry="22.5" />
+                <rect
+                  id="Rectangle_5_copy-2"
+                  data-name="Rectangle 5 copy"
+                  class="cls-1"
+                  x="230"
+                  y="1433"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_2-2"
+                  data-name="Rectangle 5 copy 2"
+                  class="cls-1"
+                  x="230"
+                  y="1688"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_3-2"
+                  data-name="Rectangle 5 copy 3"
+                  class="cls-1"
+                  x="230"
+                  y="1943"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_4-2"
+                  data-name="Rectangle 5 copy 4"
+                  class="cls-1"
+                  x="589"
+                  y="1822"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_5-2"
+                  data-name="Rectangle 5 copy 5"
+                  class="cls-1"
+                  x="589"
+                  y="1301"
+                  width="381"
+                  height="45"
+                  rx="22.5"
+                  ry="22.5"
+                />
+                <rect
+                  id="Rectangle_5_copy_6-2"
+                  data-name="Rectangle 5 copy 6"
+                  class="cls-1"
+                  x="566"
+                  y="1178"
+                  width="45"
+                  height="300"
+                  rx="22.5"
+                  ry="22.5"
+                />
+              </g>
+              <rect
+                id="Rectangle_5_copy_7-2"
+                data-name="Rectangle 5 copy 7"
+                class="cls-1"
+                x="925"
+                y="1301"
+                width="45"
+                height="560"
+                rx="22.5"
+                ry="22.5"
+              />
+              <rect
+                id="Rectangle_5_copy_9"
+                data-name="Rectangle 5 copy 9"
+                class="cls-1"
+                x="925"
+                y="269"
+                width="45"
+                height="560"
+                rx="22.5"
+                ry="22.5"
+              />
+              <rect
+                id="Rectangle_5_copy_12"
+                data-name="Rectangle 5 copy 12"
+                class="cls-1"
+                x="1261"
+                y="504"
+                width="45"
+                height="1100"
+                rx="22.5"
+                ry="22.5"
+              />
+              <rect
+                id="Rectangle_5_copy_10"
+                data-name="Rectangle 5 copy 10"
+                class="cls-1"
+                x="925"
+                y="504"
+                width="381"
+                height="45"
+                rx="22.5"
+                ry="22.5"
+              />
+              <rect
+                id="Rectangle_5_copy_11"
+                data-name="Rectangle 5 copy 11"
+                class="cls-1"
+                x="925"
+                y="1559"
+                width="381"
+                height="45"
+                rx="22.5"
+                ry="22.5"
+              />
+              <rect
+                id="Rectangle_5_copy_13"
+                data-name="Rectangle 5 copy 13"
+                class="cls-1"
+                x="1284"
+                y="1035"
+                width="432"
+                height="45"
+                rx="22.5"
+                ry="22.5"
+              />
+              <image
+                id="Shutterstock_1258279885"
+                x="1716"
+                y="898"
+                width="225"
+                height="274"
+                xlink:href="data:img/png;base64,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"
+              />
+            </svg>
+            <span class="inline-block font-bold pt-3 text-xl max-w-40 sm:max-w-56"
+              >Single Elimination Bracket Generator
+            </span>
+          </li>
+          <li class="flex flex-col items-center md:items-end text-xl text-black tracking-wide">
+            <svg class="w-36 h-36" id="_5_Man" data-name="5 Man" width="3840" height="3237" viewBox="0 0 3840 3237">
+              <defs></defs>
+              <g id="Trios_copy" data-name="Trios copy">
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M48.275,3196.21c0-375.54,304.441-679.98,679.987-679.98s679.988,304.44,679.988,679.98"
+                  />
+                  <circle
+                    id="Ellipse_1_copy"
+                    data-name="Ellipse 1 copy"
+                    class="cls-2"
+                    cx="728.264"
+                    cy="2136.045"
+                    r="441.576"
+                  />
+                </g>
+                <g id="Group_1_copy_3" data-name="Group 1 copy 3">
+                  <path
+                    class="cls-1"
+                    d="M2432.28,3196.21c0-375.54,304.44-679.98,679.98-679.98s679.99,304.44,679.99,679.98"
+                  />
+                  <circle
+                    id="Ellipse_1_copy-2"
+                    data-name="Ellipse 1 copy"
+                    class="cls-2"
+                    cx="3112.265"
+                    cy="2136.045"
+                    r="441.575"
+                  />
+                </g>
+                <g id="Group_1_copy_2" data-name="Group 1 copy 2">
+                  <path
+                    class="cls-1"
+                    d="M1217.28,3196.21c0-375.54,304.44-679.98,679.98-679.98s679.99,304.44,679.99,679.98"
+                  />
+                  <circle
+                    id="Ellipse_1_copy-3"
+                    data-name="Ellipse 1 copy"
+                    class="cls-2"
+                    cx="1897.265"
+                    cy="2136.045"
+                    r="441.575"
+                  />
+                </g>
+              </g>
+              <g id="Trios_copy_2" data-name="Trios copy 2">
+                <g>
+                  <path
+                    class="cls-1"
+                    d="M655.275,1643.21c0-375.54,304.441-679.983,679.985-679.983s679.99,304.443,679.99,679.983"
+                  />
+                  <circle
+                    id="Ellipse_1_copy-4"
+                    data-name="Ellipse 1 copy"
+                    class="cls-2"
+                    cx="1335.264"
+                    cy="583.044"
+                    r="441.576"
+                  />
+                </g>
+                <g id="Group_1_copy_2-2" data-name="Group 1 copy 2">
+                  <path
+                    class="cls-1"
+                    d="M1824.28,1643.21c0-375.54,304.44-679.983,679.98-679.983s679.99,304.443,679.99,679.983"
+                  />
+                  <circle
+                    id="Ellipse_1_copy-5"
+                    data-name="Ellipse 1 copy"
+                    class="cls-2"
+                    cx="2504.265"
+                    cy="583.044"
+                    r="441.575"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            <span class="inline-block font-bold pt-3 text-xl max-w-40 sm:max-w-56">Team Contest</span>
+          </li>
+        </ul>
+
+        <hr class="text-black w-full mb-6" />
+
+        <h3 class="text-4xl font-extrabold uppercase tracking-wide mb-6">Details</h3>
+        <div class="w-full lg:max-w-screen-lg">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus eros, hendrerit eget enim eget, dapibus
+            tincidunt ex. Phasellus lacinia iaculis ligula, a porta lectus efficitur at
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleMobileNavBtn = document.getElementById("toggle-mobile-nav-btn");
+        const toggleIcon = document.getElementById("toggle-icon");
+        const closeIcon = document.getElementById("close-icon");
+        const mobileNav = document.getElementById("mobile-nav");
+
+        if (toggleMobileNavBtn && toggleIcon && closeIcon) {
+          toggleMobileNavBtn.addEventListener("click", () => {
+            mobileNav.classList.toggle("hidden");
+            closeIcon.classList.toggle("hidden");
+            toggleIcon.classList.toggle("hidden");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

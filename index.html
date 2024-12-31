@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Account Page</title>
+  </head>
+  <body>
+    <header class="container mx-auto mb-12 sm:bm-0 flex flex-col items-center justify-between xl:flex-row">
+      <div class="flex items-center flex-col md:flex-row xl:w-3/5">
+        <img
+          src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1688,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1647294043/220314-halo-sxsw-tease-01_nptbbe"
+          class="max-w-44 rounded-full aspect-square object-cover my-6 md:my-12"
+        />
+        <div class="mb-12 md:mb-0 md:ml-6 text-center md:text-left">
+          <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold uppercase tracking-wide">Laquon Treadwell</h1>
+          <h2 class="md:text-2xl font-extrabold uppercase tracking-wide">CREATOR • VOICEOVER ARTIST • IGL</h2>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center xl:items-end xl:w-2/5">
+        <nav class="mb-4 flex flex-wrap justify-center xl:justify-end gap-y-4">
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#about-me"
+            >About Me</a
+          >
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#masterclass"
+            >Masterclass</a
+          >
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#services"
+            >Services</a
+          >
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#merch">Merch</a>
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#podcast"
+            >Podcast</a
+          >
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#tournaments"
+            >Tournaments</a
+          >
+          <a class="md:text-xl font-extrabold uppercase ml-6 tracking-wide hover:text-cyan-400" href="#get-connected"
+            >Get Connected</a
+          >
+        </nav>
+        <ul class="flex flex-wrap space-x-8 gap-y-4 items-center justify-center">
+          <li>
+            <a href="#" target="_blank">
+              <svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                height="24"
+                width="24"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M256,0C114.62,0,0,114.62,0,256s114.62,256,256,256s256-114.62,256-256S397.38,0,256,0z M172.211,41.609
+			c-24.934,27.119-44.68,66.125-56.755,111.992H49.749C75.179,102.741,118.869,62.524,172.211,41.609z M25.6,256
+			c0-26.999,5.077-52.727,13.662-76.8h70.494c-4.608,24.294-7.356,49.963-7.356,76.8s2.748,52.506,7.347,76.8H39.262
+			C30.677,308.727,25.6,283,25.6,256z M49.749,358.4h65.707c12.083,45.867,31.821,84.872,56.755,111.991
+			C118.869,449.476,75.179,409.259,49.749,358.4z M243.2,485.188c-43.81-8.252-81.877-58.24-101.359-126.788H243.2V485.188z
+			 M243.2,332.8H135.74c-4.924-24.166-7.74-49.997-7.74-76.8s2.816-52.634,7.74-76.8H243.2V332.8z M243.2,153.6H141.841
+			C161.323,85.052,199.39,35.063,243.2,26.812V153.6z M462.251,153.6h-65.707c-12.083-45.867-31.821-84.873-56.755-111.992
+			C393.131,62.524,436.821,102.741,462.251,153.6z M268.8,26.812c43.81,8.252,81.877,58.24,101.359,126.788H268.8V26.812z
+			 M268.8,179.2h107.46c4.924,24.166,7.74,49.997,7.74,76.8s-2.816,52.634-7.74,76.8H268.8V179.2z M268.8,485.188V358.4h101.359
+			C350.677,426.948,312.61,476.937,268.8,485.188z M339.789,470.391c24.934-27.127,44.672-66.125,56.755-111.991h65.707
+			C436.821,409.259,393.131,449.476,339.789,470.391z M402.244,332.8c4.608-24.294,7.356-49.963,7.356-76.8
+			s-2.748-52.506-7.347-76.8h70.494c8.576,24.073,13.653,49.801,13.653,76.8c0,27-5.077,52.727-13.662,76.8H402.244z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="facebook.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="instagram.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="tiktok.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                aria-hidden="true"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="snapchat.com" target="_blank">
+              <svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M5.829 4.533c-.6 1.344-.363 3.752-.267 5.436-.648.359-1.48-.271-1.951-.271-.49 0-1.075.322-1.167.802-.066.346.089.85 1.201 1.289.43.17 1.453.37 1.69.928.333.784-1.71 4.403-4.918 4.931-.251.041-.43.265-.416.519.056.975 2.242 1.357 3.211 1.507.099.134.179.7.306 1.131.057.193.204.424.582.424.493 0 1.312-.38 2.738-.144 1.398.233 2.712 2.215 5.235 2.215 2.345 0 3.744-1.991 5.09-2.215.779-.129 1.448-.088 2.196.058.515.101.977.157 1.124-.349.129-.437.208-.992.305-1.123.96-.149 3.156-.53 3.211-1.505.014-.254-.165-.477-.416-.519-3.154-.52-5.259-4.128-4.918-4.931.236-.557 1.252-.755 1.69-.928.814-.321 1.222-.716 1.213-1.173-.011-.585-.715-.934-1.233-.934-.527 0-1.284.624-1.897.286.096-1.698.332-4.095-.267-5.438-1.135-2.543-3.66-3.829-6.184-3.829-2.508 0-5.014 1.268-6.158 3.833z"
+                  fill="#020202"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="x.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="twitch.com" target="_blank"
+              ><svg
+                class="w-8 h-8 text-black hover:text-cyan-300"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M2.149 0l-1.612 4.119v16.836h5.731v3.045h3.224l3.045-3.045h4.657l6.269-6.269v-14.686h-21.314zm19.164 13.612l-3.582 3.582h-5.731l-3.045 3.045v-3.045h-4.836v-15.045h17.194v11.463zm-3.582-7.343v6.262h-2.149v-6.262h2.149zm-5.731 0v6.262h-2.149v-6.262h2.149z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!------------------------ About Me  ---------------------------->
+    <section
+      id="about-me"
+      class="container mx-auto sm:my-12 2xl bg-slate-100 grid grid-cols-1 xl:grid-cols-2 sm:rounded-lg overflow-hidden transition"
+    >
+      <div class="p-12">
+        <h3 class="text-2xl md:text-4xl font-extrabold uppercase mb-6">About P11nk</h3>
+        <p class="md:text-xl md:leading-8">
+          I'm P11nk! A multi-talented entertainer known for my wit and humor as a comedian, versatile voice actor, and
+          skilled game tester. Beyond my passion for entertainment, I'm also a cancer survivor, which has fueled my
+          determination and resilience. As a dominant force in shooter games, I've participated in an impressive 120
+          tournaments to date. Moreover, I take immense pride in having raised over 700k for charities, using my
+          platform to make a positive impact on the world.
+        </p>
+        <a
+          href="#"
+          class="p-3 md:p-6 bg-cyan-400 hover:bg-cyan-300 inline-block mt-6 uppercase font-extrabold md:text-xl text-white"
+          >SMS Notifications</a
+        >
+      </div>
+      <div class="relative min-h-72 md:min-h-96">
+        <figure>
+          <img
+            class="h-full w-full object-cover order-first xl:order-last absolute"
+            src="https://imageio.forbes.com/specials-images/imageserve/61f727ecae721fff158b8f44/Halo-Paramount--TV-Show-Master-Chief/960x0.jpg?format=jpg&width=960"
+          />
+          <figcaption class="hidden">About P11nk</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!------------------------ Posts  ---------------------------->
+    <section id="posts" class="container mx-auto my-12 2xl">
+      <h2 class="text-4xl text-center font-extrabold mb-6 uppercase tracking-wide">Recent Posts</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <li>
+          <article class="relative">
+            <a
+              href="#"
+              class="block sm:rounded-lg shadow-xl hover:scale-105 transition overflow-hidden"
+              target="_blank"
+            >
+              <figure class="relative min-h-56 md:min-h-72">
+                <img
+                  class="h-full w-full object-cover absolute"
+                  src="https://variety.com/wp-content/uploads/2021/11/Halo-Paramount-Plus-1.jpg?w=1000"
+                />
+                <figcaption class="hidden">
+                  Cras turpis mauris, vulputate et lacinia ac, semper a magna. Phasellus id tellus tristique, maximus ex
+                  at, aliquam eros.
+                </figcaption>
+              </figure>
+              <p class="p-6 text-xl font-bold md:min-h-40">
+                Cras turpis mauris, vulputate et lacinia ac, semper a magna. Phasellus id tellus tristique, maximus ex
+                at, aliquam eros.
+              </p></a
+            >
+          </article>
+        </li>
+        <li>
+          <article class="relative">
+            <a
+              href="#"
+              class="block sm:rounded-lg shadow-xl hover:scale-105 transition overflow-hidden"
+              target="_blank"
+            >
+              <figure class="relative min-h-56 md:min-h-72">
+                <img
+                  class="h-full w-full object-cover absolute"
+                  src="https://i0.wp.com/simplehomecinema.com/wp-content/uploads/2022/03/9pncft6ksoqwmjbrrw6j4g.jpg?fit=1400%2C788&ssl=1"
+                />
+                <figcaption class="hidden">Praesent vehicula turpis in odio malesuada porttitor.</figcaption>
+              </figure>
+              <p class="p-6 text-xl font-bold md:min-h-40">Praesent vehicula turpis in odio malesuada porttitor.</p></a
+            >
+          </article>
+        </li>
+        <li>
+          <article class="relative">
+            <a
+              href="#"
+              class="block sm:rounded-lg shadow-xl hover:scale-105 transition overflow-hidden"
+              target="_blank"
+            >
+              <figure class="relative min-h-56 md:min-h-72">
+                <img
+                  class="h-full w-full object-cover absolute"
+                  src="https://i.guim.co.uk/img/media/30738c82bc05355751e626a81c1d71490c1e3594/12_58_2982_1789/master/2982.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=b229c495756a4a01f60093be2a043545"
+                />
+                <figcaption class="hidden">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum a augue at tempor. Nulla et
+                  aliquet justo.
+                </figcaption>
+              </figure>
+              <p class="p-6 text-xl font-bold md:min-h-40">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum a augue at tempor. Nulla et
+                aliquet justo.
+              </p></a
+            >
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!------------------------ Masterclass  ---------------------------->
+    <section
+      id="masterclass"
+      class="container mx-auto sm:my-12 2xl bg-gradient-to-r from-slate-950 to-slate-700 sm:rounded-lg p-12 grid grid-cols-1 xl:grid-cols-2 gap-8 transition"
+    >
+      <div>
+        <h3 class="text-2xl md:text-4xl font-extrabold uppercase mb-3 text-white tracking-wide">
+          Masterclass with P11nk
+        </h3>
+        <h4 class="md:text-2xl font-extrabold uppercase mb-12 text-white tracking-wide">
+          Unlock the Insights on Content Creation
+        </h4>
+        <p class="md:text-xl mb-6 text-white md:leading-8">
+          Unlocking insights into the gaming community's internal dynamics, optimizing UX/UI, receiving constructive
+          feedback on your website, mastering best practices, expanding network reach to new audiences, and mastering
+          the art of pitching to influencers and content creators & more.
+        </p>
+        <a
+          href="#"
+          target="_blank"
+          class="p-3 md:p-6 bg-cyan-400 hover:bg-cyan-300 inline-block mt-6 uppercase font-extrabold md:text-xl text-white mb-6 xl:mb-0"
+          >Schedule Now</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="block border-8 border-white shadow-xl relative min-h-48 md:min-h-96 hover:scale-105 transition"
+        >
+          <figure>
+            <img
+              class="h-full w-full object-cover order-first xl:order-last absolute"
+              src="https://sportshub.cbsistatic.com/i/2023/06/20/990c0baf-2d0e-481d-8911-8a76ee01c96e/halo-infinite-season-4.png"
+            />
+            <figcaption class="hidden">Masterclass with P11nk</figcaption>
+          </figure>
+          <div class="badge font-bold md:text-lg text-white bg-cyan-400 p-3 md:p-6 absolute right-0 top-0">$20</div>
+        </a>
+      </div>
+    </section>
+
+    <!------------------------ Services  ---------------------------->
+    <section id="services" class="container mx-auto sm:my-12 2xl bg-slate-100 sm:rounded-lg p-12">
+      <ul class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        <li>
+          <article>
+            <form
+              class="block border-8 border-white shadow-xl relative min-h-48 md:min-h-96 hover:scale-105 transition order-first xl:order-last"
+            >
+              <button>
+                <figure>
+                  <img
+                    class="h-full w-full object-cover absolute top-0"
+                    src="https://variety.com/wp-content/uploads/2021/11/Halo-Paramount-Plus-1.jpg?w=1000"
+                  />
+                  <figcaption class="hidden">Streaming Services</figcaption>
+                </figure>
+                <div class="badge font-bold md:text-lg text-white bg-cyan-400 p-3 md:p-6 absolute right-0 top-0">
+                  $20
+                </div>
+              </button>
+            </form>
+            <p class="md:text-2xl font-extrabold uppercase my-6">Streaming Services</p>
+            <p class="md:text-lg">
+              Expert guidance on Streaming Bots, Integrations, Plugins, industry best practices, OBS, and
+              beyond—tailored for seamless content creation across multiple platforms within the dynamic world of
+              software streaming.
+            </p>
+            <a href="#" class="md:text-xl font-extrabold uppercase mt-6 inline-block text-cyan-400 hover:text-cyan-300"
+              >Book with P11nk Now</a
+            >
+          </article>
+        </li>
+        <li>
+          <article>
+            <form
+              class="block border-8 border-white shadow-xl relative min-h-48 md:min-h-96 hover:scale-105 transition order-first xl:order-last"
+            >
+              <button>
+                <figure>
+                  <img
+                    class="h-full w-full object-cover absolute top-0"
+                    src="https://i0.wp.com/simplehomecinema.com/wp-content/uploads/2022/03/9pncft6ksoqwmjbrrw6j4g.jpg?fit=1400%2C788&ssl=1"
+                  />
+                  <figcaption class="hidden">Social Media Assistance</figcaption>
+                </figure>
+                <div class="badge font-bold md:text-lg text-white bg-cyan-400 p-3 md:p-6 absolute right-0 top-0">
+                  $20
+                </div>
+              </button>
+            </form>
+            <p class="md:text-2xl font-extrabold uppercase my-6">Social Media Assistance</p>
+            <p class="md:text-lg">
+              Discover optimal strategies for promoting your personal brand across social media platforms. Learn the art
+              of effective uploading, outsmarting algorithms, mastering video editing techniques, and much more.
+            </p>
+            <a href="#" class="md:text-xl font-extrabold uppercase mt-6 inline-block text-cyan-400 hover:text-cyan-300"
+              >Book with P11nk Now</a
+            >
+          </article>
+        </li>
+        <li>
+          <article>
+            <form
+              class="block border-8 border-white shadow-xl relative min-h-48 md:min-h-96 hover:scale-105 transition order-first xl:order-last"
+            >
+              <button>
+                <figure>
+                  <img
+                    class="h-full w-full object-cover absolute top-0"
+                    src="https://i.guim.co.uk/img/media/30738c82bc05355751e626a81c1d71490c1e3594/12_58_2982_1789/master/2982.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=b229c495756a4a01f60093be2a043545"
+                  />
+                  <figcaption class="hidden">Pick My Brain</figcaption>
+                </figure>
+                <div class="badge font-bold md:text-lg text-white bg-cyan-400 p-3 md:p-6 absolute right-0 top-0">
+                  $20
+                </div>
+              </button>
+            </form>
+            <p class="md:text-2xl font-extrabold uppercase my-6">Pick My Brain</p>
+            <p class="md:text-lg">
+              Delve into a showcase of my accomplishments and my ongoing journey within the Gaming and Esports industry,
+              highlighting the significant milestones and experiences that define my professional trajectory.
+            </p>
+            <a href="#" class="md:text-xl font-extrabold uppercase mt-6 inline-block text-cyan-400 hover:text-cyan-300"
+              >Book with P11nk Now</a
+            >
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!------------------------ Merch  ---------------------------->
+    <section
+      id="merch"
+      class="container mx-auto sm:my-12 2xl bg-gradient-to-r from-slate-950 to-slate-700 sm:rounded-lg p-12 grid grid-cols-1 xl:grid-cols-2 gap-8 transition"
+    >
+      <div>
+        <a
+          href="#"
+          class="block border-8 border-white shadow-xl relative min-h-48 md:min-h-96 hover:scale-105 transition"
+        >
+          <figure>
+            <img class="h-full w-full object-cover order-first xl:order-last absolute" src="./images/merch.jpeg" />
+            <figcaption class="hidden">Merch</figcaption>
+          </figure>
+          <div class="badge font-bold md:text-lg text-white bg-cyan-400 p-3 md:p-6 absolute right-0 top-0">$20</div>
+        </a>
+      </div>
+      <div>
+        <h3 class="text-2xl md:text-4xl font-extrabold uppercase mb-3 text-white tracking-wide">Merch</h3>
+        <h4 class="text-xl md:text-2xl font-extrabold uppercase mb-12 text-white tracking-wide">On Sale Now</h4>
+        <p class="md:text-xl mb-6 text-white md:leading-8">
+          Teamed up with Geeks Unleashed to design my Official merch store, where style meets rebellion! Check out our
+          edgy and sick merch collections that speaks volumes without saying a word.
+        </p>
+        <a
+          href="#"
+          target="_blank"
+          class="p-3 md:p-6 bg-cyan-400 hover:bg-cyan-300 inline-block mt-6 uppercase font-extrabold text-xl text-white"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <!------------------------ Podcast  ---------------------------->
+    <section
+      id="podcast"
+      class="container mx-auto sm:my-12 2xl bg-slate-100 sm:rounded-lg grid grid-cols-1 lg:grid-cols-2 overflow-hidden"
+    >
+      <div class="p-12">
+        <h3 class="text-2xl md:text-4xl font-extrabold uppercase mb-3 tracking-wide">Podcast</h3>
+        <p class="text-xl md:text-2xl font-extrabold uppercase mb-12 tracking-wide">Coming Soon</p>
+        <p class="md:text-xl md:leading-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae rutrum sapien. Nam at accumsan nibh. Proin
+          viverra tempor ligula, sit amet venenatis felis dapibus sed. Donec tincidunt tristique euismod. Nunc ac
+          posuere orci.
+        </p>
+        <a
+          href="#"
+          target="_blank"
+          class="p-3 md:p-6 bg-cyan-400 hover:bg-cyan-300 inline-block mt-6 uppercase font-extrabold text-xl text-white"
+          >Stay Notified</a
+        >
+      </div>
+      <div class="relative min-h-48 md:min-h-96 order-first lg:order-last brightness-75">
+        <figure>
+          <img class="h-full w-full object-cover order-first xl:order-last absolute" src="./images/podcast.jpeg" />
+          <figcaption class="hidden">Podcast</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!------------------------ Tournaments  ---------------------------->
+    <section
+      id="old-tournaments"
+      class="container mx-auto sm:my-12 2xl bg-slate-100 sm:rounded-lg grid grid-cols-1 lg:grid-cols-2 overflow-hidden"
+    >
+      <div class="relative min-h-48 md:min-h-96 brightness-75 order-first">
+        <figure>
+          <img class="h-full w-full object-cover order-first xl:order-last absolute" src="./images/tournament.jpeg" />
+          <figcaption class="hidden">Podcast</figcaption>
+        </figure>
+      </div>
+      <div class="p-12">
+        <h3 class="text-2xl md:text-4xl font-extrabold uppercase mb-3 tracking-wide">Tournaments</h3>
+        <p class="text-xl md:text-2xl font-extrabold uppercase mb-12 tracking-wide">Coming Soon</p>
+        <p class="md:text-xl md:leading-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae rutrum sapien. Nam at accumsan nibh. Proin
+          viverra tempor ligula, sit amet venenatis felis dapibus sed. Donec tincidunt tristique euismod. Nunc ac
+          posuere orci.
+        </p>
+        <a
+          href="#"
+          target="_blank"
+          class="p-3 md:p-6 bg-cyan-400 hover:bg-cyan-300 inline-block mt-6 uppercase font-extrabold text-xl text-white"
+          >Stay Notified</a
+        >
+      </div>
+    </section>
+
+    <!------------------------ Tournaments  ---------------------------->
+    <section
+      id="tournaments"
+      class="container mx-auto sm:my-12 2xl bg-gradient-to-r from-slate-950 to-slate-700 sm:rounded-lg p-12 transition"
+    >
+      <h3 class="text-white text-2xl md:text-4xl font-extrabold uppercase mb-3 tracking-wide text-center pb-6">
+        Tournaments
+      </h3>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <li>
+          <article>
+            <figure>
+              <img
+                src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/c3db85e4-eea3-4b8f-95a4-bc13a227de78.webp"
+                class=""
+              />
+              <figurecaption class="hidden">On3 Elite Series Tournament</figurecaption>
+            </figure>
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-6">
+              <div class="col-span-3">
+                <a href="#" class="block text-3xl md:text-4xl py-3 text-white font-bold hover:text-cyan-300">
+                  On3 Elite Series Tournament
+                </a>
+                <p class="text-white flex items-center gap-x-2 mb-4">
+                  <svg
+                    class="w-8 h-8 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-2xl font-bold">Madden 24</span>
+                </p>
+
+                <p class="text-white flex items-center gap-x-2">
+                  <svg
+                    class="w-8 h-8 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+                    />
+                  </svg>
+                  <time class="text-lg font-bold">5/28/2024 07:00 PM ET</time>
+                </p>
+                <p class="bg-white text-black font-bold rounded-lg inline-block mt-6 p-2 inline-flex">
+                  <svg
+                    class="w-6 h-6 mr-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>Check-in Open</span>
+                </p>
+              </div>
+              <figure class="mt-6 lg:mt-0 lg:justify-self-end">
+                <img src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" class="h-32 w-32" />
+                <figurecaption class="hidden">Madden 24</figurecaption>
+              </figure>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article>
+            <figure>
+              <img
+                src="https://hyperluxeblobs.blob.core.windows.net/tournament-banners/c3db85e4-eea3-4b8f-95a4-bc13a227de78.webp"
+                class=""
+              />
+              <figurecaption class="hidden">On3 Elite Series Tournament</figurecaption>
+            </figure>
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-6">
+              <div class="col-span-3">
+                <a href="#" class="block text-3xl md:text-4xl py-3 text-white font-bold hover:text-cyan-300">
+                  On3 Elite Series Tournament
+                </a>
+                <p class="text-white flex items-center gap-x-2 mb-4">
+                  <svg
+                    class="w-8 h-8 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8.6 5.2A1 1 0 0 0 7 6v12a1 1 0 0 0 1.6.8l8-6a1 1 0 0 0 0-1.6l-8-6Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-2xl font-bold">Madden 24</span>
+                </p>
+
+                <p class="text-white flex items-center gap-x-2">
+                  <svg
+                    class="w-8 h-8 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"
+                    />
+                  </svg>
+                  <time class="text-lg font-bold">5/28/2024 07:00 PM ET</time>
+                </p>
+                <p class="bg-white text-black font-bold rounded-lg inline-block mt-6 p-2 inline-flex">
+                  <svg
+                    class="w-6 h-6 mr-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+
+                  <span>Last Day to Sign Up</span>
+                </p>
+              </div>
+              <figure class="mt-6 lg:mt-0 lg:justify-self-end">
+                <img src="https://hlx.gg/images/games/logos/ea-sports-logo.webp" class="h-32 w-32" />
+                <figurecaption class="hidden">Madden 24</figurecaption>
+              </figure>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!------------------------ Videos  ---------------------------->
+    <section id="videos" class="container mx-auto my-12 2xl">
+      <h2 class="text-4xl text-center font-extrabold mb-6 uppercase tracking-wide">Clips</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+        <li>
+          <a href="https://www.youtube.com/watch?v=2Kjq1gwcCyw" target="_blank">
+            <figure>
+              <img
+                class="sm:rounded-2xl aspect-video h-72 sm:h-48 shadow"
+                src="https://i.ytimg.com/vi/2Kjq1gwcCyw/hqdefault.jpg?cb=1"
+              />
+              <figcaption class="mt-3 font-bold text-center md:text-left hover:text-cyan-400">
+                Trust on COD? NEVER! #proximitychat2024 #codtrustissues #callofdutyclips
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-2xl" href="https://www.youtube.com/watch?v=id_x9e77Cvo" target="_blank">
+            <figure>
+              <img
+                class="sm:rounded-2xl aspect-video h-72 sm:h-48 shadow"
+                src="https://i.ytimg.com/vi/id_x9e77Cvo/hqdefault.jpg?cb=1"
+              />
+              <figcaption class="mt-3 font-bold text-center md:text-left hover:text-cyan-400">
+                Sup Daddy... #warzoneclips #warzonebestclips #codwarzone
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-2xl" href="https://www.youtube.com/watch?v=qAe9207z2z4" target="_blank">
+            <figure>
+              <img
+                class="sm:rounded-2xl aspect-video h-72 sm:h-48 shadow"
+                src="https://i.ytimg.com/vi/qAe9207z2z4/hqdefault.jpg?cb=1"
+              />
+              <figcaption class="mt-3 font-bold text-center md:text-left hover:text-cyan-400">
+                Cod Comedy Recaps
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-2xl" href="https://www.youtube.com/watch?v=gv7meZcxSZQ" target="_blank">
+            <figure>
+              <img
+                class="sm:rounded-2xl aspect-video h-72 sm:h-48 shadow"
+                src="https://i.ytimg.com/vi/gv7meZcxSZQ/hqdefault.jpg?cb=1"
+              />
+              <figcaption class="mt-3 font-bold text-center md:text-left hover:text-cyan-400">
+                Hi CHAT! #warzone #cod #community
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!------------------------ Get Connected  ---------------------------->
+    <section
+      id="get-connected"
+      class="container grid grid-cols-1 lg:grid-cols-3 mx-auto sm:my-12 2xl sm:rounded-lg overflow-hidden"
+    >
+      <div class="bg-cyan-400 text-white p-6 lg:p-12">
+        <h3 class="text-2xl xl:text-4xl text-center font-extrabold uppercase text-white tracking-wide italic">
+          Get Connected
+        </h3>
+      </div>
+      <div
+        class="bg-slate-900 text-white text-xl xl:text-2xl font-extrabold uppercase text-white tracking-wide p-6 md:p-12 col-span-2"
+      >
+        <ul class="flex flex-col flex-wrap md:flex-row gap-y-4 items-center justify-around h-full">
+          <li><a href="#" class="hover:text-cyan-300">Facebook</a></li>
+          <li><a href="#" class="hover:text-cyan-300">Instagram</a></li>
+          <li><a href="#" class="hover:text-cyan-300">TikTok</a></li>
+          <li><a href="#" class="hover:text-cyan-300">Snapchat</a></li>
+          <li><a href="#" class="hover:text-cyan-300">Twitter</a></li>
+          <li><a href="#" class="hover:text-cyan-300">Twitch</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!------------------------ Partners  ---------------------------->
+    <section id="partners" class="container mx-auto sm:my-12 2xl bg-black sm:rounded-lg p-12">
+      <ul class="flex justify-center flex-wrap gap-y-4 items-center">
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"><img class="m-auto" src="https://www.hlx.gg/assets/p11nk/advanced-logo-tKcZEQA_.png" /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"><img class="m-auto" src="https://www.hlx.gg/assets/p11nk/alt-logo-fiEGMNls.png" /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"><img class="m-auto" src="https://www.hlx.gg/assets/p11nk/gamer-logo-4ZKlRO4g.png" /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"><img class="m-auto" src="https://www.hlx.gg/assets/p11nk/geeks-logo-vut5hbtL.png" /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"
+            ><img
+              class="m-auto"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABKCAMAAABHCGBGAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAvpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Oov7nAAAAP50Uk5TAD2dOAYBdf9uDov+bw8ZmYIRKqy8Ps3yWxUkfu/RdjYjFgMCBx1IaYXA9fC9iGctId/5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"
+          /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"
+            ><img
+              class="m-auto"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXwAAAAoCAMAAADKUbGtAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAutQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////CUv0wAAAAPl0Uk5TAAMFAjxtn7rU5O/Wv6J0QgqMYQs0oDiQvrnAZIC9zydyL7ysDEiJP5Te/+ekSQame3xzuzpj6aFTEYLJDeWatEoS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"
+          /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"
+            ><img
+              class="m-auto"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAA4CAMAAAA2AMH9AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAvRQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ScVxIwAAAPx0Uk5TABzm9O/z2xUj//kZDWaZ6hcbYoSCKjbsN81H6xZ65aVlgUwUdK3Cpkk+kLi/o2EBOF5VXzXF4YVc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"
+          /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"><img class="m-auto" src="https://www.hlx.gg/assets/p11nk/stream-loots-logo-Y9Tv2LP9.png" /></a>
+        </li>
+        <li class="lg:w-1/4 w-1/2 text-center lg:px-5 px-3">
+          <a href="#"
+            ><img
+              class="m-auto"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPwAAABpCAMAAAAp3r6lAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAuhQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////LuDs6gAAAPh0Uk5TABgaHB4nM0picH6EiIuQmKe90Nvl7eobICIjNkNUZXJ/h4ySlpmfqbrT4unv9Pf4+v3/+x0oKSssNUhZbZGdoq+8xtjj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"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <!------------------------ Join CTA ----------------------------->
+    <section class="md:container md:flex md:justify-center md:items-center md:my-12 md:mx-auto">
+      <div class="hidden md:flex flex-grow border-t border-slate-400"></div>
+      <span class="md:px-4"
+        ><a
+          href="#"
+          class="inline-block font-bold w-full md:w-auto md:font-extrabold tracking-wide text-center text-white bg-cyan-400 md:bg-slate-900 hover:bg-cyan-400 p-4 md:text-xl md:rounded-lg"
+          ><span class="text-sm md:text-md uppercase font-bold">Join top creators like</span> InspireGamingD
+          <span class="text-sm md:text-md uppercase font-bold">on</span>
+          <svg
+            class="block md:inline-block mx-auto w-20 h-16 md:ml-1"
+            viewBox="0 0 1981 704"
+            version="1.1"
+            xml:space="preserve"
+            style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2"
+          >
+            <g transform="matrix(1,0,0,1,0,-1984.1)">
+              <g id="Artboard1" transform="matrix(1,0,0,0.795031,0,1984.1)">
+                <rect x="0" y="0" width="1980.7" height="885.5" style="fill: none" />
+                <clipPath id="_clip1">
+                  <rect x="0" y="0" width="1980.7" height="885.5" />
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                  <g transform="matrix(2.69418,0,0.0037863,3.79173,-2012.36,-3325.16)">
+                    <g transform="matrix(1.11508,0,0,1,-82.6844,0)">
+                      <g transform="matrix(324.493,0,0,324.493,1361,1110.5)"></g>
+                      <text
+                        x="718.507px"
+                        y="1110.5px"
+                        style="
+                          font-family: 'Helvetica-BoldOblique', 'Helvetica';
+                          font-weight: 700;
+                          font-style: italic;
+                          font-size: 324.493px;
+                          fill: white;
+                        "
+                      >
+                        H
+                        <tspan x="949.601px 1144.57px " y="1110.5px 1110.5px ">LX</tspan>
+                      </text>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </span>
+      <div class="hidden md:flex flex-grow border-t border-slate-400"></div>
+    </section>
+
+    <footer class="w-full bg-black text-white text-center font-extrabold p-4">
+      &copy; 2024 HLX x P11NK. All Rights Reserved
+    </footer>
+  </body>
+</html>

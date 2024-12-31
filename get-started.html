@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLXU | Get Started</title>
+  </head>
+  <body>
+    <section class="container max-w-screen-lg mx-auto my-12 flex flex-col p-6">
+      <a href="#" class="flex items-center font-bold py-6 text-cyan-400 hover:text-cyan-300 uppercase tracking-wide"
+        >View Page
+        <svg
+          class="w-6 h-6 ml-1"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 12H5m14 0-4 4m4-4-4-4"
+          />
+        </svg>
+      </a>
+
+      <!----------- Tabs --------------->
+      <div class="border-b w-full hidden md:flex md:justify-center mb-6">
+        <ul id="tabs" role="tablist" class="flex items-end text-sm">
+          <li>
+            <button id="posts" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Posts</button>
+          </li>
+          <li>
+            <button id="details" class="py-3 px-3 lg:px-6 border-b border-cyan-400 text-slate-500 font-bold uppercase">
+              Details
+            </button>
+          </li>
+          <li>
+            <button id="images" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Images</button>
+          </li>
+          <li>
+            <button id="followers" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Followers</button>
+          </li>
+          <li>
+            <button id="announcments" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Announcements</button>
+          </li>
+          <li>
+            <button id="orders" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Orders</button>
+          </li>
+          <li>
+            <button id="faq" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">FAQs</button>
+          </li>
+          <li>
+            <button id="admins" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Admins</button>
+          </li>
+          <li>
+            <button id="help" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Help</button>
+          </li>
+        </ul>
+      </div>
+
+      <!----------- Dropdown --------------->
+      <div class="relative md:hidden">
+        <svg
+          class="w-6 h-6 text-gray-800 absolute right-1 top-4"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m8 15 4 4 4-4m0-6-4-4-4 4"
+          />
+        </svg>
+
+        <select
+          class="bg-white inline-block text-center mb-3 border rounded-lg p-4 w-full outline-cyan-400 shadow appearance-none pr-6 text-slate-500 uppercase"
+        >
+          <option>Posts</option>
+          <option>Details</option>
+          <option>Images</option>
+          <option>Followers</option>
+          <option>Announcements</option>
+          <option>Orders</option>
+          <option>FAQs</option>
+          <option>Admins</option>
+          <option>Help</option>
+        </select>
+      </div>
+
+      <!--------------- Details ---------------------------------------->
+      <div>
+        <p class="text-2xl font-extrabold uppercase tracking-wide mb-6">Welcome to HLXU</p>
+
+        <!--------------Get Started Video ------------------------------>
+        <video controls class="w-full">
+          <source src="./images/gaming.mp4" type="video/mp4" />
+        </video>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">How to Request for a Tournament</p>
+
+        <p class="text-lg">
+          Setting up a tournament for your community and Fans? Reach out to us! We offer Single Elimination, Battle
+          Royal formats and Round Robin! Choose any game of your choosing from Console, PC and Mobile.
+        </p>
+
+        <a
+          href="mailto:Josh@Hyperluxe.gg"
+          class="inline-block text-center text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-72"
+        >
+          Request a Tournament
+        </a>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">How to Unlock SMS</p>
+
+        <p class="text-lg">Requirements: (100 Followers Limit)</p>
+
+        <ul class="list-disc ml-6 text-lg">
+          <li>Must have 10 followers to activate SMS!</li>
+          <li>1 SMS Notification Per day!</li>
+        </ul>
+
+        <p class="text-lg">
+          Ready to Unlock your SMS? Start sending Notifications to your community, Send us an Email with your Community
+          page Link to get Activated!
+        </p>
+
+        <a
+          href="mailto:Info@hyperluxe.gg"
+          class="inline-block text-center text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-72"
+        >
+          Unlock SMS
+        </a>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">Merchandise</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-6 gap-6">
+          <div>
+            <p class="text-lg">
+              Interested in Selling Merchandise and do not have a storefront? Connect with us, we can activate a
+              storefront for you!
+            </p>
+
+            <a
+              href="mailto:Info@hyperluxe.gg"
+              class="inline-block text-center text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-72"
+            >
+              Connect with us
+            </a>
+          </div>
+          <div>
+            <p class="text-lg">
+              Need an Artist? Connect with an artist that fits your style and budget to get your merchandise started!
+            </p>
+
+            <a
+              href="https://fourthwall.com/design-community"
+              target="_blank"
+              class="inline-block text-center text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-72"
+            >
+              Connect with an artist
+            </a>
+          </div>
+        </div>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">Suggested Sizing for Images</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 mt-6">
+          <div>
+            <p class="text-lg pb-3"><span class="font-bold">Logo Image:</span> Portrait/Square - 400x400px</p>
+            <div class="bg-slate-400 w-[200px] h-[200px]"></div>
+          </div>
+          <div class="mt-6 md:mt-0">
+            <p class="text-lg pb-3"><span class="font-bold">Splash Image:</span> Landscape - 1380x720px</p>
+            <div class="bg-slate-400 w-96 h-56"></div>
+          </div>
+        </div>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">Discord</p>
+        <p class="text-lg">
+          Join our Discord! From social media tips and tricks, monetization options, and NIL Deals we house it all in
+          our community server!
+        </p>
+
+        <a
+          href="https://discord.gg/mG852PE6uD"
+          target="_blank"
+          class="inline-block text-center text-xl mt-6 p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-72"
+        >
+          Join Discord
+        </a>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">Revenue</p>
+        <p class="text-lg">
+          All HLXU Users keep 80% of your sales! From Tournament entry fees, Sponsorships on your page, Merchandise, and
+          all Product Sales from Digital and one on ones! We payout monthly to all of our Clients!
+        </p>
+
+        <p class="text-2xl font-extrabold uppercase tracking-wide mt-12 mb-6">Sell 1 on 1 Calls</p>
+        <p class="text-lg">
+          Ready to start selling 1 on 1 calls? Here is key information to get started! You will need to create your own
+          Calendly account. By the duration of time you are wanting the meeting to last for your service (1 Hour) Copy
+          your Calendly link for your specific product and booking on your page and attach the Link and a brief
+          information about the service you would like the Purchaser to know in the Follow up Instructions Section.
+        </p>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.getElementById("tabs");
+        const links = tabs.querySelectorAll("li > button");
+
+        links.forEach((link) =>
+          link.addEventListener("click", () => {
+            const currentActiveLink = tabs.querySelector(".border-b");
+            const activeClasses = ["border-b", "border-cyan-400", "font-bold"];
+            activeClasses.forEach((activeClass) => {
+              currentActiveLink.classList.remove(activeClass);
+              link.classList.add(activeClass);
+            });
+          })
+        );
+      });
+    </script>
+  </body>
+</html>

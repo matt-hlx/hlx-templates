@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HLX | Images</title>
+  </head>
+  <body>
+    <section class="container max-w-screen-lg mx-auto my-12 flex flex-col p-6">
+      <a href="#" class="flex items-center font-bold py-6 text-cyan-400 hover:text-cyan-300 uppercase tracking-wide"
+        >View Page
+        <svg
+          class="w-6 h-6 ml-1"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 12H5m14 0-4 4m4-4-4-4"
+          />
+        </svg>
+      </a>
+
+      <!----------- Tabs --------------->
+      <div class="border-b w-full hidden md:flex md:justify-center mb-20">
+        <ul id="tabs" role="tablist" class="flex items-end text-sm">
+          <li>
+            <button id="posts" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Posts</button>
+          </li>
+          <li>
+            <button id="details" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Details</button>
+          </li>
+          <li>
+            <button id="images" class="py-3 px-3 lg:px-6 border-b border-cyan-400 font-bold text-slate-500 uppercase">
+              Images
+            </button>
+          </li>
+          <li>
+            <button id="followers" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Followers</button>
+          </li>
+          <li>
+            <button id="announcments" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Announcements</button>
+          </li>
+          <li>
+            <button id="orders" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Orders</button>
+          </li>
+          <li>
+            <button id="faq" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">FAQs</button>
+          </li>
+          <li>
+            <button id="admins" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Admins</button>
+          </li>
+          <li>
+            <button id="help" class="py-3 px-3 lg:px-6 text-slate-500 uppercase">Help</button>
+          </li>
+        </ul>
+      </div>
+
+      <!----------- Dropdown --------------->
+      <div class="relative md:hidden mb-20">
+        <svg
+          class="w-6 h-6 text-gray-800 absolute right-1 top-4"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m8 15 4 4 4-4m0-6-4-4-4 4"
+          />
+        </svg>
+
+        <select
+          class="bg-white block mb-3 border rounded-lg p-4 w-full outline-cyan-400 shadow appearance-none pr-6 text-slate-500 uppercase"
+        >
+          <option>Posts</option>
+          <option>Details</option>
+          <option>Images</option>
+          <option>Followers</option>
+          <option>Announcements</option>
+          <option>Orders</option>
+          <option>FAQs</option>
+          <option>Admins</option>
+          <option>Help</option>
+        </select>
+      </div>
+
+      <!--------------- Announcements ---------------------------------------->
+      <form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="font-bold text-slate-600 hover:cursor-pointer">Community Logo</label>
+            <div class="flex flex-col md:flex-row md:items-center">
+              <label
+                for="logo-upload"
+                class="block text-center p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold hover:cursor-pointer"
+                >Choose a File</label
+              >
+              <p id="logo-filename" class="mt-6 md:mt-0 md:pl-3 text-slatye-600 font-bold"></p>
+            </div>
+            <input id="logo-upload" type="file" class="hidden" />
+            <img
+              class="md:w-72 md:h-72 mt-6 object-cover rounded-md"
+              src="https://hlx.gg/images/placeholders/community-logo-placeholder.png"
+              id="logo-preview"
+            />
+          </div>
+          <div class="mt-6 md:mt-0">
+            <label class="font-bold text-slate-600 hover:cursor-pointer">Splash Image</label>
+            <div class="flex flex-col md:flex-row md:items-center">
+              <label
+                for="splash-upload"
+                class="block text-center p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold hover:cursor-pointer"
+                >Choose a File</label
+              >
+              <p id="splash-filename" class="mt-6 md:mt-0 md:pl-3 text-slatye-600 font-bold"></p>
+            </div>
+            <input id="splash-upload" type="file" class="hidden" />
+            <img
+              class="md:max-w-96 aspect-video mt-6 object-cover rounded-md"
+              id="splash-preview"
+              src="https://hlx.gg/images/placeholders/game-banner-default.png"
+            />
+          </div>
+        </div>
+
+        <div class="mt-12 md:mt-24 flex justify-center">
+          <button class="text-xl p-3 text-white bg-cyan-400 hover:bg-cyan-300 uppercase font-bold min-w-96">
+            Save Images
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Sets Preview Images
+        const logoFileInput = document.getElementById("logo-upload");
+        logoFileInput.addEventListener("change", (event) => {
+          const [file] = event.target.files || [];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const imgPreview = document.getElementById("logo-preview");
+              const fileName = document.getElementById("logo-filename");
+              fileName.innerHTML = file.name;
+              imgPreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+
+        const splashFileInput = document.getElementById("splash-upload");
+        splashFileInput.addEventListener("change", (event) => {
+          const [file] = event.target.files || [];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const imgPreview = document.getElementById("splash-preview");
+              const fileName = document.getElementById("splash-filename");
+              fileName.innerHTML = file.name;
+              imgPreview.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
